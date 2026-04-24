@@ -1,0 +1,778 @@
+/* css của trần quốc tuấn */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topbar {
+    background: #111111;
+    padding: 10px 0; 
+}
+
+.topbar-text {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar-link {
+    color: #ffffff !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    margin-right: 25px; 
+    display: inline-block;
+}
+
+.currency-label {
+    color: #ffffff !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.currency .dropdown-toggle::after {
+    display: inline-block !important;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 0; 
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.logo {
+    padding: 30px 0; 
+    display: inline-block;
+}
+
+.logo img {
+    width: 196px; 
+    height: 23px;
+    display: block;
+}
+
+.nav-list {
+    padding: 26px 0 25px !important; 
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400; 
+    color: #111111 !important;
+    text-transform: capitalize;
+    padding: 0 !important;
+    margin: 0 25px;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none !important; 
+}
+
+.header-icons {
+    padding: 30px 0;
+}
+
+.header-icons a {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    margin-left: 20px;
+}
+
+.header-icons img {
+    width: 20px;
+    height: auto;
+}
+
+.cart-count {
+    position: absolute;
+    top: 58%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-weight: 700;
+    color: #111111;
+    background: transparent;
+    width: auto;
+    height: auto;
+}
+
+.cart-total {
+    font-size: 15px; 
+    font-weight: 700;
+    color: #111111;
+    margin-left: 5px;
+}
+
+
+.hero {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #f3f2ee; 
+}
+
+.hero-slide.active {
+    display: block;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center right;
+    z-index: 0; 
+}
+
+.hero-slide .container {
+    position: relative;
+    /* Đảm bảo chữ cao hơn ảnh để không bị mất */
+    z-index: 2; 
+    padding-top: 230px;
+}
+
+.hero-content {
+    max-width: 530px; 
+}
+
+.hero-subtitle {
+    color: #e63333;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 28px; 
+    display: block;
+}
+
+.hero-title {
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 48px;  
+    font-weight: 700;
+    color: #111111;
+    display: block;
+    width: 530px;     
+    height: 116px;     
+    line-height: 1.2;  
+    margin: 0 0 30px 0; 
+    padding: 0;
+    letter-spacing: -0.5px;
+}
+
+.hero-desc {
+    font-size: 16px;
+    line-height: 28px;
+    color: #3d3d3d;
+    margin-bottom: 35px;
+    max-width: 460px; 
+}
+
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    background: #111111;
+    color: #ffffff !important;
+    padding: 14px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none !important;
+}
+
+.btn-custom .arrow_right {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.hero-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: #111111;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.prev-slide { left: 40px; }
+.next-slide { right: 40px; }
+
+.hero-nav-btn:hover { color: #e63333; }
+
+.arrow_left::before { content: '❮'; }
+.arrow_right::before { content: '❯'; }
+
+
+
+
+/*css của nguyễn khương tịnh*/
+.mf-product {
+    padding-top: 75px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.mf-section-heading__title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.mf-tabs { 
+    display:flex;
+    justify-content: center;
+    margin-bottom: 45px; 
+}
+
+.mf-tabs__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mf-tabs__link {
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;        
+    font-weight: 400;      
+    color: #6f6f6f;
+    text-transform: none;  
+    letter-spacing: 0;     
+    padding: 5px 40px;    
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.mf-tabs__item.active .mf-tabs__link {
+    color:#111111;
+    font-weight: 700;
+}
+
+.mf-tabs__link:hover {
+    color:#111111;
+    text-decoration: none;
+}
+
+.mf-product__card {
+    position: relative;
+    background: var(--mf-white);
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.mf-product__img-wrap {
+    position: relative;
+    overflow: hidden;
+    border: none !important;
+}
+
+.mf-product__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    border: none !important;
+}
+
+.mf-product__badge {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--mf-white);
+    padding: 4px 10px;
+    line-height: 1.4;
+    z-index: 2;
+    border-radius: 0;
+}
+
+.mf-product__badge--new  { 
+    color:#111111;
+    font-size:11px;
+    padding: 4px 15px 2px;  
+    background-color: #ffffff;
+}
+
+.mf-product__badge--sale {
+    color: #ffffff;
+    font-size: 11px;
+    padding: 4px 15px 2px;
+    background-color: #111111; 
+}
+
+.mf-product__card:hover .mf-product__name {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.mf-btn--cart-hover {
+    position: absolute;
+    top: 0; left: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(229, 54, 55);
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-bottom: 0;
+    visibility: visible;
+}
+
+.mf-product__card:hover .mf-btn--cart-hover {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.mf-product__info {
+    padding: 15px 0 0 0;
+    text-align: left;
+    min-height: 110px;
+    position: relative;
+}
+
+.mf-product__colors {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.1s;
+}
+
+.mf-product__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mf-product__card:hover .mf-product__colors {
+    opacity: 1;
+}
+
+.mf-product__color {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mf-product__actions {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top:-62px;
+    transform: translate(50px, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s;
+    z-index: 5;
+}
+
+.mf-product__action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color:#ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid var(--mf-border);
+    border-radius: 0;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.mf-product__card:hover .mf-product__actions {
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
+.mf-product__action-btn:last-child { 
+    border-bottom: none; 
+}
+
+.mf-product__action-btn img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    transition: filter 0.2s ease;
+}
+
+.mf-product__action-btn:hover img {
+     filter: brightness(0) invert(1); 
+}
+
+.mf-product__name-wrap {
+    position: relative;
+    height: 22px;       
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.mf-product__name {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mf-text);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    line-height: 1.4;
+    position: absolute;         
+    top: 0; left: 0;           
+    width: 100%;               
+    opacity: 1;                
+    transform: translateY(0);  
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.mf-product__stars {
+    margin-bottom: 6px;
+}
+
+.mf-product__stars i {
+    margin-right: -7px;
+    font-size: 14px;
+    color:#b7b7b7;
+    line-height: 1.2;
+}
+
+.mf-product__stars .fa-solid{
+    color:#f7941d;
+} 
+    
+.mf-product__price {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color:#0d0d0d;
+    line-height: 1.2;
+}
+
+.mf-deal {
+    height: 615px;        
+    background: #f3f2ee;
+    overflow: hidden;     
+}
+
+.mf-categories-box {
+    background: #fff;
+    padding: 30px 30px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 30px;
+    height: 50%; 
+    width: 80%;  
+    z-index: 2;
+    overflow: visible;
+    position: relative;
+}
+
+.mf-categories__item {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    display: block;
+    transition: color 0.2s;
+    margin-left: 162px;
+}
+
+.mf-categories__item.active {
+    font-size: 34px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.mf-deal__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: -120px; 
+    z-index: 1;
+}
+
+.mf-deal__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+.mf-deal__sale-badge {
+    position: absolute;
+    top: -50px;
+    right: 50px; 
+    color:#ffffff;
+    width: 110px;
+    height: 110px;
+    background-color: #111111;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mf-deal__sale-top {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.mf-deal__sale-price {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.mf-deal__content {
+    padding: 0 80px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 615px;
+    align-items: flex-start;
+}
+
+.mf-deal__label-top {
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #e53637;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+    line-height: 1;
+}
+
+.mf-deal__product-name {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+    line-height: 52px;
+    text-transform: capitalize;
+    max-width: 350px;
+}
+
+.mf-countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+}
+
+.mf-countdown__numbers {
+    display: grid;
+    grid-template-columns: auto 20px auto 20px auto 20px auto;
+    width: 100%;
+    column-gap: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #111111;
+    align-items: center;
+}
+
+.mf-countdown__numbers span {
+    display: inline-block;
+    text-align: center;
+}
+
+.mf-countdown__numbers .sep {
+    text-align: center;
+}
+
+.mf-countdown__labels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    width: 100%;
+    margin-top:-10px;
+    margin-left: -5px;
+}
+
+.mf-countdown__labels span {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+.mf-btn--primary {
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #111111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 14px 30px;
+    border: 2px solid #111111;
+    border-radius: 0;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    line-height: 1;
+    align-self: flex-start;
+}
+
+
+/*css của võ văn huy*/
+.mf-instagram{
+    margin-top: 100px;
+}
+.mf-instagram__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.mf-instagram__gallery {
+    flex: 0 0 65%; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mf-instagram__item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.mf-instagram__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mf-instagram__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mf-instagram__item:hover .mf-instagram__overlay {
+    opacity: 1;
+}
+.mf-instagram__text {
+    flex: 0 0 35%; 
+    padding-left: 50px; 
+    padding-right: 15px;
+}
+
+.mf-instagram__text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.mf-instagram__text p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.mf-instagram__hashtag {
+    color: #e53637;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .mf-instagram__wrapper {
+        flex-direction: column;
+    }
+    .mf-instagram__gallery,
+    .mf-instagram__text {
+        flex: 0 0 100%;
+    }
+    .mf-instagram__text {
+        padding-left: 15px;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
