@@ -55,14 +55,19 @@ const deadline = new Date('2026-05-31T23:59:59');
 function updateCountdown() {
     const diff = deadline - new Date();
 
-    const days    = Math.max(0, Math.floor(diff / 86400000));
-    const hours   = Math.max(0, Math.floor((diff % 86400000) / 3600000));
-    const minutes = Math.max(0, Math.floor((diff % 3600000) / 60000));
-    const seconds = Math.max(0, Math.floor((diff % 60000) / 1000));
+    if (diff <= 0) {
+        clearInterval(timer);
+        return;
+    }
+
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
 
     const spans = document.querySelectorAll('.mf-countdown__numbers span:not(.sep)');
 
-    if (spans.length === 0) return;
+    if (!spans.length) return;
 
     spans[0].textContent = String(days).padStart(2, '0');
     spans[1].textContent = String(hours).padStart(2, '0');
@@ -71,7 +76,8 @@ function updateCountdown() {
 }
 
 updateCountdown();
-setInterval(updateCountdown, 1000);
+
+const timer = setInterval(updateCountdown, 1000);
 
 // tab sản phẩm
 const allCards = Array.from(document.querySelectorAll('.mf-product__grid [data-tab]'));

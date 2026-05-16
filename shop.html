@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male-Fashion | Template</title>
+    <link rel="stylesheet" href="assets/library/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/library/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">         
+    <link rel="stylesheet" href="assets/css/shop.css">
+</head>                             
+<body>
+
+    <header class="header">
+        <div class="topbar">
+            <div class="container">     
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="topbar-text mb-0">Free shipping, 30-day return or refund guarantee.</p>
+                    <div class="topbar-right d-flex align-items-center gap-3">
+                        <a href="#" class="topbar-link">Sign in</a>
+                        <a href="#" class="topbar-link">FAQs</a>
+                        <div class="currency dropdown">
+                            <span class="currency-label dropdown-toggle" data-bs-toggle="dropdown">USD</span>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="image/logo.png" alt="Male Fashion">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav mx-auto nav-list">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+                    </ul>
+                    <div class="header-icons d-flex align-items-center gap-3">
+                        <a href="#"><img src="assets/icon/search.png" alt=""></a>
+                        <a href="#"><img src="assets/icon/heart.png" alt=""></a>
+                        <a href="#" class="cart-btn">
+                            <img src="assets/icon/cart.png" alt="">
+                            <span class="cart-count">0</span>
+                        </a>
+                        <span class="cart-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="shop-breadcrumb">
+        <div class="container">
+            <h4 class="shop-breadcrumb__title">Shop</h4>
+            <div class="shop-breadcrumb__nav">
+                <a href="index.html">Home</a>
+                <span class="sep"><i class="fa-solid fa-angle-right"></i></span>
+                <span>Shop</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="shop-sidebar">
+
+                        <div class="sidebar-search">
+                            <input type="text" class="sidebar-search__input" placeholder="Search...">
+                            <button class="sidebar-search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Categories</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <ul class="sidebar-cat-list">
+                                    <li><a href="#">Men <span>(20)</span></a></li>
+                                    <li><a href="#">Women <span>(20)</span></a></li>
+                                    <li><a href="#">Bags <span>(20)</span></a></li>
+                                    <li><a href="#">Clothing <span>(20)</span></a></li>
+                                    <li><a href="#">Shoes <span>(20)</span></a></li>
+                                    <li><a href="#">Accessories <span>(20)</span></a></li>
+                                    <li><a href="#">Kids <span>(20)</span></a></li>
+                                    <li><a href="#">Kids <span>(20)</span></a></li>
+                                    <li><a href="#">Kids <span>(20)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Branding</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <ul class="sidebar-brand-list">
+                                    <li><a href="#">Louis Vuitton</a></li>
+                                    <li><a href="#">Chanel</a></li>
+                                    <li><a href="#">Hermes</a></li>
+                                    <li><a href="#">Gucci</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Filter Price</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <ul class="sidebar-price-list">
+                                    <li><a href="#">$0.00 - $50.00</a></li>
+                                    <li><a href="#">$50.00 - $100.00</a></li>
+                                    <li><a href="#">$100.00 - $150.00</a></li>
+                                    <li><a href="#">$150.00 - $200.00</a></li>
+                                    <li><a href="#">$200.00 - $250.00</a></li>
+                                    <li><a href="#">250.00+</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Size</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <div class="sidebar-size-grid">
+                                    <button class="sidebar-size-btn">XS</button>
+                                    <button class="sidebar-size-btn">S</button>
+                                    <button class="sidebar-size-btn">M</button>
+                                    <button class="sidebar-size-btn">XL</button>
+                                    <button class="sidebar-size-btn">2XL</button>
+                                    <button class="sidebar-size-btn">XXL</button>
+                                    <button class="sidebar-size-btn">3XL</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Colors</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <div class="sidebar-color-grid">
+                                    <span class="sidebar-color-dot" style="background:#0b090c;" title="Black"></span>
+                                    <span class="sidebar-color-dot" style="background:#20315f;" title="Navy"></span>
+                                    <span class="sidebar-color-dot" style="background:#f5a623;" title="Yellow"></span>
+                                    <span class="sidebar-color-dot" style="background:#636068;" title="Gray"></span>
+                                    <span class="sidebar-color-dot" style="background:#57594d;" title="Olive"></span>
+                                    <span class="sidebar-color-dot" style="background:#e8bac4;" title="Pink"></span>
+                                    <span class="sidebar-color-dot" style="background:#d6c1d7;" title="Lilac"></span>
+                                    <span class="sidebar-color-dot" style="background:#ed1c24;" title="Red"></span>
+                                    <span class="sidebar-color-dot" style="background:#ffffff; border: 1px solid #e5e5e5;" title="White"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-block">
+                            <div class="sidebar-block__header">
+                                <h6 class="sidebar-block__title">Tags</h6>
+                                <i class="fa-solid fa-chevron-down sidebar-block__toggle"></i>
+                            </div>
+                            <div class="sidebar-block__body">
+                                <div class="sidebar-tags">
+                                    <a href="#" class="sidebar-tag">Product</a>
+                                    <a href="#" class="sidebar-tag">Bags</a>
+                                    <a href="#" class="sidebar-tag">Shoes</a>
+                                    <a href="#" class="sidebar-tag">Fashio</a>
+                                    <a href="#" class="sidebar-tag">Clothing</a>
+                                    <a href="#" class="sidebar-tag">Hats</a>
+                                    <a href="#" class="sidebar-tag">Accessories</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8">
+                    <div class="shop-main">
+
+                        <div class="shop-toolbar">
+                            <span class="shop-toolbar__result">Showing 1–12 of 126 results</span>
+                            <div class="shop-toolbar__sort">
+                                <span class="sort-label">Sort by Price:</span>
+                                <div class="sort-dropdown">
+                                    <div class="sort-dropdown__selected">
+                                        <span class="sort-dropdown__selected-text">Low To High</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="sort-dropdown__list">
+                                        <div class="sort-dropdown__item active">Low To High</div>
+                                        <div class="sort-dropdown__item">$0 - $55</div>
+                                        <div class="sort-dropdown__item">$55 - $100</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row gx-custom gy-4 shop-product-grid"></div>
+
+                        <div class="shop-pagination">
+                            <a href="#" class="shop-pagination__btn active">1</a>
+                            <a href="#" class="shop-pagination__btn">2</a>
+                            <a href="#" class="shop-pagination__btn">3</a>
+                            <span class="shop-pagination__dots">...</span>
+                            <a href="#" class="shop-pagination__btn">21</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="mf-footer">
+        <div class="container">
+            <div class="row g-4 mf-footer__grid">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="mf-footer__about">
+                        <a href="#" class="mf-footer__logo">
+                            <img src="image/footer-logo.png" alt="Male Fashion">
+                        </a>
+                        <p class="mf-footer__desc">
+                            The customer is at the heart of our unique business model, which includes design.
+                        </p>
+                        <a href="#" class="mf-footer__payment">
+                            <img src="image/payment.png" alt="Payment Methods">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="mf-footer__col">
+                        <h6 class="mf-footer__col-title">Shopping</h6>
+                        <ul class="mf-footer__links list-unstyled">
+                            <li><a href="#" class="mf-footer__link">Clothing Store</a></li>
+                            <li><a href="#" class="mf-footer__link">Trending Shoes</a></li>
+                            <li><a href="#" class="mf-footer__link">Accessories</a></li>
+                            <li><a href="#" class="mf-footer__link">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="mf-footer__col">
+                        <h6 class="mf-footer__col-title">Support</h6>
+                        <ul class="mf-footer__links list-unstyled">
+                            <li><a href="#" class="mf-footer__link">Contact Us</a></li>
+                            <li><a href="#" class="mf-footer__link">Payment Methods</a></li>
+                            <li><a href="#" class="mf-footer__link">Delivery</a></li>
+                            <li><a href="#" class="mf-footer__link">Return &amp; Exchanges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="mf-footer__col mf-footer__newsletter">
+                        <h6 class="mf-footer__col-title">Newsletter</h6>
+                        <p class="mf-footer__newsletter-desc">
+                            Be the first to know about new arrivals, look books, sales &amp; promos!
+                        </p>
+                        <div class="mf-newsletter d-flex">
+                            <input type="email" class="mf-newsletter__input form-control" placeholder="Your email">
+                            <button class="mf-newsletter__btn">
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mf-footer__bottom">
+            <div class="container">
+                <p class="mf-footer__copy text-center mb-0">
+                    Copyright &copy; 2020 All rights reserved | This template is made with
+                    <i class="fa-regular fa-heart" style="color: rgb(229, 54, 55);"></i> by
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/library/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/library/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/library/Jquery/jquery-4.0.0.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html>

@@ -1,31 +1,16 @@
 @font-face {
     font-family: 'Nunito Sans';
-    src: url('library/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
+    src: url('../library/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'Nunito Sans';
-    src: url('library/fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf');
+    src: url('../library/fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf');
     font-weight: 100 900;
     font-style: italic;
 }
-
 /* css của trần quốc tuấn */
-/* Khai báo Nunito Sans từ thư mục assets/fonts */
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
-    font-weight: 300 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('assets/fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
-    font-weight: 300 800;
-    font-style: italic;
-}
 
 
 * {
@@ -41,7 +26,8 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    width: 100%;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -81,6 +67,13 @@ body {
     display: inline-block !important;
     margin-left: 5px;
     vertical-align: middle;
+}
+.header-icons a span{
+    color: #0d0d0d;
+    font-size: 11px;
+    position: absolute;
+    left: 6px;
+    top: 15px;
 }
 
 .navbar {
@@ -229,7 +222,6 @@ body {
 }
 
 .hero-title {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 48px;
     font-weight: 700;
     color: #111111;
@@ -367,7 +359,6 @@ body {
 }
 
 .banner-heading {
-    font-family: "Nunito Sans", sans-serif;
     font-size: 36px;
     font-weight: 700; 
     color: #111111;
@@ -403,7 +394,7 @@ body {
 }
 
 .banner-link:hover {
-    color: #e63333; 
+    color: #111111; 
 }
 
 .banner-link:hover::after {
@@ -420,7 +411,6 @@ body {
 }
 
 .mf-section-heading__title {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #111111;
@@ -436,14 +426,11 @@ body {
 }
 
 .mf-tabs__list {
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 
 .mf-tabs__link {
     display: block;
-    font-family: "Nunito Sans", sans-serif;
     font-size: 24px;        
     font-weight: 400;      
     color: #6f6f6f;
@@ -471,28 +458,25 @@ body {
     border: none !important;
     box-shadow: none !important;
 }
-.col-xxl-3 {
-    padding-right: 22px;
-}
+
 .mf-product__img-wrap {
     position: relative;
     overflow: hidden;
-    border: none !important;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
 }
 
 .mf-product__img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
-    border: none !important;
 }
 
 .mf-product__badge {
     position: absolute;
     top: 15px;
     left: 0;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -649,10 +633,10 @@ body {
 
 .mf-product__stars {
     margin-bottom: 6px;
+    display: flex;
 }
 
 .mf-product__stars i {
-    margin-right: -7px;
     font-size: 14px;
     color:#b7b7b7;
     line-height: 1.2;
@@ -663,7 +647,6 @@ body {
 } 
     
 .mf-product__price {
-    font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color:#0d0d0d;
@@ -681,7 +664,6 @@ body {
     background: #fff;
     padding: 30px 30px;
     margin-top: -20px;
-    display: flex;
     flex-direction: column;
     justify-content: center; 
     gap: 30px;
@@ -690,10 +672,10 @@ body {
     z-index: 2;
     overflow: visible;
     position: relative;
+    
 }
 
 .mf-categories__item {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 34px;
     font-weight: 400;
     color: #b7b7b7;
@@ -702,22 +684,28 @@ body {
     white-space: nowrap;
     display: block;
     transition: color 0.2s;
-    margin-left: 162px;
+   
 }
-
+.text{
+    display: inline-block;
+    margin-left: 160px;
+    line-height: 72px;
+}
 .mf-categories__item.active {
     font-size: 34px;
     font-weight: 700;
     color: #212529;
 }
-
+.gx-custom{
+    --bs-gutter-x: 30px;
+}
 .mf-deal__img-wrap {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-left: -120px; 
+    margin-left: 0; 
     z-index: 1;
 }
 
@@ -725,17 +713,15 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    padding-left: 200px;
-    padding-bottom: 20px;
 }
 
 .mf-deal__sale-badge {
     position: absolute;
-    top: -50px;
-    right: 50px; 
+    transform: translateY(-150px);
+    right: 85px; 
     color:#ffffff;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     background-color: #111111;
     border-radius: 50%;
     display: flex;
@@ -745,7 +731,6 @@ body {
 }
 
 .mf-deal__sale-top {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 10px;
     font-weight: 400;
     color: #ffffff;
@@ -753,7 +738,6 @@ body {
 }
 
 .mf-deal__sale-price {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
@@ -772,7 +756,6 @@ body {
 
 .mf-deal__label-top {
     display: block;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #e53637;
@@ -783,7 +766,6 @@ body {
 }
 
 .mf-deal__product-name {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #111111;
@@ -805,7 +787,6 @@ body {
     grid-template-columns: auto 20px auto 20px auto 20px auto;
     width: 100%;
     column-gap: 15px;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 48px;
     font-weight: 700;
     color: #111111;
@@ -839,7 +820,6 @@ body {
 
 .mf-btn--primary {
     display: inline-block;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: #ffffff;
@@ -882,11 +862,11 @@ body {
     aspect-ratio: 1 / 1;
     cursor: pointer;
 }
-
 .mf-instagram__img {
-    width: 249.98px;
-    height: 261px
-    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
@@ -930,14 +910,6 @@ body {
     }
 }
 
-@font-face {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-stretch: 100%;
-    font-display: swap;  
-    src: url('../fonts/nunito-sans-300.woff2') format('woff2');
-}
 /*
    BLOG
 */
@@ -1096,13 +1068,14 @@ body {
     color: #ffffff !important;
     background: transparent !important;
     border: none !important;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: 2px solid #ffffff!important;
     padding: 10px 40px 10px 0 !important;
     border-radius: 0;
     box-shadow: none !important;
 }
 .mf-newsletter__input::placeholder {
     color: #b7b7b7;
+    opacity:0.3;
 }
 .mf-newsletter {
     position: relative;  /* thêm dòng này */
