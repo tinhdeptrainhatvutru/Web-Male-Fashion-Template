@@ -47,6 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// Dropdown hover
+document.querySelectorAll('.navbar .dropdown').forEach(function(dropdown) {
+    dropdown.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-menu').classList.add('show');
+        this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'true');
+    });
+    dropdown.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-menu').classList.remove('show');
+        this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+    });
+});
 //js của nguyễn khương tịnh
 //time countdown
 

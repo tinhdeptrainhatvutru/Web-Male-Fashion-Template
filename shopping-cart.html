@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Male-Fashion | Contact</title>
+    <title>Male-Fashion | Shopping Cart</title>
     <link rel="stylesheet" href="assets/library/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/library/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/library/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    
+    <link rel="stylesheet" href="assets/css/shopping-cart.css">
 </head>
-<body>      
+<body>
+
     <header class="header">
         <div class="topbar">
             <div class="container">
@@ -39,6 +39,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav mx-auto nav-list">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -54,76 +55,91 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="header-icons d-flex align-items-center gap-3">
                         <a href="#"><img src="assets/icon/search.png" alt=""></a>
                         <a href="#"><img src="assets/icon/heart.png" alt=""></a>
                         <a href="#" class="cart-btn">
                             <img src="assets/icon/cart.png" alt="">
-                            <span class="cart-count">0</span>
+                            <span class="cart-count">2</span>
                         </a>
-                        <span class="cart-total">$0.00</span>
+                        <span class="cart-total">$169.50</span>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3825.996653478773!2d107.57287507418857!3d16.47570712842995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI4JzMyLjUiTiAxMDfCsDM0JzMxLjYiRQ!5e0!3m2!1svi!2s!4v1778725433761!5m2!1svi!2s" 
-            width="100%" 
-            height="500" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-    <section class="contact-section">
+
+    <section class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-text">
-                        <div class="section-title">
-                            <span>Information</span>
-                            <h2>Contact Us</h2>
-                            <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict attention.</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shopping Cart</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <span>Shopping Cart</span>
                         </div>
-                        <ul>
-                            <li>
-                                <h4>America</h4>
-                                <p>195 E Parker Square Dr, Parker, CO 801 <br />+43 982-314-0958</p>
-                            </li>
-                            <li>
-                                <h4>France</h4>
-                                <p>109 Avenue Léon, 63 Clermont-Ferrand <br />+12 345-423-9893</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="shopping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="shopping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-item-list"></tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn">
+                                <a href="#">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn update__btn">
+                                <a href="#"><i class="fa-solid fa-rotate-right"></i> Update cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="cart__discount">
+                        <h6>Discount codes</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Coupon code">
+                            <button type="submit">Apply</button>
+                        </form>
+                    </div>
+                    <div class="cart__total">
+                        <h6>Cart total</h6>
+                        <ul>
+                            <li>Subtotal <span>$ 169.50</span></li>
+                            <li>Total <span>$ 169.50</span></li>
+                        </ul>
+                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="mf-footer">
         <div class="container">
             <div class="row g-4 mf-footer__grid">
@@ -192,7 +208,10 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/library/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/shopping-cart.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

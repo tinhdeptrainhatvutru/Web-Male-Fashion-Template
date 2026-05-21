@@ -20,7 +20,6 @@
 }
 
 body {
-    /* Đổi về Nunito Sans vì ní đã có sẵn font này nội bộ */
     font-family: 'Nunito Sans', sans-serif; 
     overflow-x: hidden;
 }
@@ -74,6 +73,27 @@ body {
     position: absolute;
     left: 6px;
     top: 15px;
+}
+/* DROPDOWN MENU */
+.navbar .dropdown-menu {
+    background-color: #111111;
+    border: none;
+    border-radius: 0;
+    line-height: 10px;
+    min-width: 150px;
+}
+
+.navbar .dropdown-item {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #111111;
 }
 
 .navbar {
