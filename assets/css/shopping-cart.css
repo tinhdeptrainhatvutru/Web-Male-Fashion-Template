@@ -57,9 +57,10 @@
     padding: 1px 1px 25px;
 }
  
-.shopping__cart__table thead th:nth-child(1) { width: 55%; text-align: left; }
-.shopping__cart__table thead th:nth-child(2) { width: 20%; text-align: center; }
-.shopping__cart__table thead th:nth-child(3) { width: 20%; text-align: center; }
+/* ĐÃ SỬA: Thay đổi tỷ lệ phần trăm các cột để khung QUANTITY đạt chuẩn ~173.72px */
+.shopping__cart__table thead th:nth-child(1) { width: 52%; text-align: left; } /* Giảm từ 55% xuống 52% */
+.shopping__cart__table thead th:nth-child(2) { width: 23%; text-align: left; } /* Tăng từ 20% lên 23% để rộng ra 173.72px */
+.shopping__cart__table thead th:nth-child(3) { width: 20%; text-align: left; }
 .shopping__cart__table thead th:nth-child(4) { width: 5%; text-align: center; }
  
 .shopping__cart__table tbody tr {
@@ -72,8 +73,8 @@
     vertical-align: middle;
 }
  
-.shopping__cart__table tbody td.quantity__item { text-align: center; }
-.shopping__cart__table tbody td.cart__price { text-align: center; }
+.shopping__cart__table tbody td.quantity__item { text-align: left; }
+.shopping__cart__table tbody td.cart__price { text-align: left; }
 .shopping__cart__table tbody td.cart__close { text-align: center; }
  
 .product__cart__item {
@@ -109,7 +110,7 @@
  
 .quantity__item .pro-qty {
     width: 80px;
-    margin: 0 auto;
+    margin: 0; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +162,7 @@
 .cart__close i:hover {
     background: #111111;
     color: #ffffff;
+    border-color: #111111;
 }
  
 .continue__btn a {
@@ -176,12 +178,6 @@
     transition: all 0.3s;
 }
  
-.continue__btn a:hover {
-    background: #111111;
-    color: #ffffff;
-    border-color: #111111;
-}
- 
 .continue__btn.update__btn {
     text-align: right;
 }
@@ -192,11 +188,7 @@
     border-color: #111111;
 }
  
-.continue__btn.update__btn a:hover {
-    background: #e53637;
-    border-color: #e53637;
-}
- 
+
 .cart__discount {
     margin-bottom: 40px;
 }
@@ -218,8 +210,8 @@
     height: 50px;
     width: 100%;
     border: 1px solid #e1e1e1;
-    padding-left: 20px;
-    padding-right: 120px;
+    padding:1px 2px 1px 20px;
+    
     outline: none;
     transition: all 0.3s;
 }
@@ -246,10 +238,7 @@
     transition: all 0.3s;
 }
  
-.cart__discount form button:hover {
-    background: #e53637;
-}
- 
+
 .cart__total {
     background: #f3f2ee;
     padding: 35px 40px 40px;
@@ -289,19 +278,16 @@
     width: 100%;
     background: #111111;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 14px 0;
+    padding: 12px 10px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s;
 }
  
-.cart__total .primary-btn:hover {
-    background: #e53637;
-}
  
 @media (max-width: 767px) {
     .continue__btn.update__btn {

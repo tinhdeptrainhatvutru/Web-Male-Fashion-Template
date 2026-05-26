@@ -4,31 +4,30 @@ $(document).ready(function () {
             id: 1,
             name: "T-shirt Contrast Pocket",
             price: 98.49,
-            image: "image/g2.jpg",
+            image: "uploads/shop/g2.jpg",
             quantity: 1
         },
         {
             id: 2,
             name: "Diagonal Textured Cap",
             price: 98.49,
-            image: "image/g3.jpg",
+            image: "uploads/shop/g3.jpg",
             quantity: 1
         },
         {
             id: 3,
             name: "Basic Flowing Scarf",
             price: 98.49,
-            image: "image/g6.jpg",
+            image: "uploads/shop/g6.jpg",
             quantity: 1
         },
         {
             id: 4,
             name: "Basic Flowing Scarf",
             price: 98.49,
-            image: "image/g7.jpg",
+            image: "uploads/shop/g7.jpg",
             quantity: 1
         },
-        
     ];
 
     function renderCartItems() {
