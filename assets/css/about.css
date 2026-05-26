@@ -1,0 +1,88 @@
+
+
+/* ============================================================
+   SECTION 5 — HAPPY CLIENTS / PARTNER LOGOS
+   ============================================================ */
+.about-clients {
+    padding: 100px 0px 70px;
+}
+
+.about-clients__heading {
+    margin-bottom: 45px;
+}
+
+.about-clients__label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #E53637;
+    margin-bottom: 15px;
+}
+
+.about-clients__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111111;
+    line-height: 46px;
+    margin-bottom: 0;
+}
+
+.about-clients__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+
+.about-clients__item img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 991px) {
+    .about-quote__text {
+        padding: 50px 40px;
+    }
+    .about-quote__img {
+        min-height: 280px;
+    }
+    .about-info__item {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .about-counter__number {
+        font-size: 40px;
+    }
+    .about-counter__item::after {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero__img img {
+        height: 280px;
+    }
+    .about-quote__text {
+        padding: 40px 28px;
+    }
+    .about-quote__icon {
+        left: 28px;
+        top: 28px;
+        font-size: 56px;
+    }
+    .about-counter {
+        padding: 40px 0;
+    }
+    .about-counter__number {
+        font-size: 34px;
+    }
+    .about-team__title,
+    .about-clients__title {
+        font-size: 22px;
+    }
+    .about-clients__item {
+        height: 72px;
+    }
+}
