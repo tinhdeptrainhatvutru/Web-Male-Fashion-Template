@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    // SẢN PHẨM
     let products = [
         {
             id: 1,
@@ -134,8 +132,6 @@ $(document).ready(function () {
             return `<span class="mf-product__color" style="background:${c};${border}"></span>`;
         }).join('');
     }
-
-    // BUILD CARD
     function buildCard(p) {
         return `
 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -195,7 +191,7 @@ $(document).ready(function () {
         let selected = $(this).text().trim();
         $('.sort-dropdown__item').removeClass('active');
         $(this).addClass('active');
-        $('.sort-dropdown__selected-text').text(selected);
+        $('.sort-dropdown__selected-text').text(selected);  
         $('.sort-dropdown').removeClass('open');
     });
 
