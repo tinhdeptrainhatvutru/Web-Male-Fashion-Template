@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Male-Fashion | Shop Details</title>
+    <title>Male-Fashion | Blog Details</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/shop-details.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+
 </head> 
 <body>
     <header class="header">
@@ -30,6 +31,7 @@
                 </div>
             </div>
         </div>
+
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand logo" href="index.html">
@@ -38,25 +40,29 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav mx-auto nav-list">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="shop-details.html">Shop Details</a></li>
+                                <li><a class="dropdown-item" href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Check Out</a></li>
+                                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
                     </ul>
                     <div class="header-icons d-flex align-items-center gap-3">
-                        <a href="#"><img src="assets/img/search.png" alt="Search"></a>
-                        <a href="#"><img src="assets/img/heart.png" alt="Wishlist"></a>
-                        <a href="#" class="cart-btn">
-                            <img src="assets/img/cart.png" alt="Cart">
-                            <span class="cart-count">0</span>
+                        <a href="#"><img src="assets/img/search.png" alt=""></a>
+                        <a href="#"><img src="assets/img/heart.png" alt=""></a>
+                        <a href="#">
+                            <img src="assets/img/cart.png" alt="">
+                            <span>0</span>
                         </a>
                         <span class="cart-total">$0.00</span>
                     </div>
@@ -65,95 +71,89 @@
         </nav>
     </header>
 
-    <section class="shop-details">
-        <div class="product__details__pic">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="product__details__breadcrumb">
-                            <a href="./index.html">Home</a>
-                            <a href="./shop.html">Shop</a>
-                            <span>Product Details</span>
+
+<section class="shop-details">
+    <div class="product__details__pic">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product__details__breadcrumb">
+                    <a href="./index.html">Home</a>
+                    <a href="./shop.html">Shop</a>
+                    <span>Product Details</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <ul class="thumb-list">
+                    <li class="thumb-item active" data-target="tabs-1">
+                        <img src="uploads/product/thumb-1.png" alt="Thumbnail 1">
+                    </li>
+                    <li class="thumb-item" data-target="tabs-2">
+                        <img src="uploads/product/thumb-2.png" alt="Thumbnail 2">
+                    </li>
+                    <li class="thumb-item" data-target="tabs-3">
+                        <img src="uploads/product/thumb-3.png" alt="Thumbnail 3">
+                    </li>
+                    <li class="thumb-item" data-target="tabs-4">
+                        <img src="uploads/product/thumb-4.png" alt="Thumbnail 4">
+                        <i class="fa fa-play"></i>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-6 col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1">
+                        <div class="product__details__pic__item">
+                            <img src="uploads/product/product-big-2.png" alt="Product Image 1" class="w-100">
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <ul class="thumb-list">
-                            <li class="thumb-item active" data-target="tabs-1">
-                                <img src="uploads/product/thumb-1.png" alt="Thumbnail 1">
-                            </li>
-                            <li class="thumb-item" data-target="tabs-2">
-                                <img src="uploads/product/thumb-2.png" alt="Thumbnail 2">
-                            </li>
-                            <li class="thumb-item" data-target="tabs-3">
-                                <img src="uploads/product/thumb-3.png" alt="Thumbnail 3">
-                            </li>
-                            <li class="thumb-item" data-target="tabs-4">
-                                <img src="uploads/product/thumb-4.png" alt="Thumbnail 4">
-                                <i class="fa fa-play"></i>
-                            </li>
-                        </ul>
+                    <div class="tab-pane" id="tabs-2">
+                        <div class="product__details__pic__item">
+                            <img src="uploads/product/product-big-3.png" alt="Product Image 2" class="w-100">
+                        </div>
                     </div>
-                    
-                    <div class="col-lg-6 col-md-9">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-1">
-                                <div class="product__details__pic__item">
-                                    <img src="uploads/product/product-big-2.png" alt="Product Image 1" class="w-100">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-2">
-                                <div class="product__details__pic__item">
-                                    <img src="uploads/product/product-big-3.png" alt="Product Image 2" class="w-100">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3">
-                                <div class="product__details__pic__item">
-                                    <img src="uploads/product/product-big.png" alt="Product Image 3" class="w-100">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-4">
-                                <div class="product__details__pic__item position-relative">
-                                    <img src="uploads/product/product-big-4.png" alt="Product Image 4" class="w-100">
-                                    <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw" class="video-popup">
-                                        <i class="fa fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="tab-pane" id="tabs-3">
+                        <div class="product__details__pic__item">
+                            <img src="uploads/product/product-big.png" alt="Product Image 3" class="w-100">
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-4">
+                        <div class="product__details__pic__item position-relative">
+                            <img src="uploads/product/product-big-4.png" alt="Product Image 4" class="w-100">
+                            <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw" class="video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
         <div class="product-details-content">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div class="product-details-text">
-                            <h4>Hooded thermal anorak</h4>
+                            <h4></h4>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
-                                <span> - 5 Reviews</span>
+                                <span></span>
                             </div>
-                            <h3>$270.00 <span>70.00</span></h3>
-                            <p>Coat with quilted lining and an adjustable hood. Featuring long sleeves with adjustable
-                                cuff tabs, adjustable asymmetric hem with elastic side tabs and a front zip fastening
-                                with placket.
-                            </p>
+                            <h3></h3>
+                            <p></p>
                             <div class="product-details-option">
                                 <div class="product-details-option-size">
                                     <span>Size:</span>
-                                    <label for="xxl">XXL<input type="radio" name="size"></label>
-                                    <label for="xl">XL<input type="radio" name="size"></label>
-                                    <label for="l">L<input type="radio" name="size"></label>
-                                    <label for="sm">S<input type="radio" name="size"></label>
                                 </div>
+
                                 <div class="product-details-option-color">
                                     <span>Color:</span>
                                     <label class="c-1" for="sp-1"><input type="radio" name="color"></label>
@@ -180,12 +180,12 @@
                                 <a href="#" class="primary-btn">Add to cart</a>
                             </div>
                             <div class="product-details-btns-option">
-                                <a href="#"><i class="fa-regular fa-heart"></i> add to wishlist</a>
+                                <a href="#"><i class="fa-regular fa-heart" ></i> add to wishlist</a>
                                 <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i> Add To Compare</a>
                             </div>
                             <div class="product-details-last-option">
                                 <h5><span>Guaranteed Safe Checkout</span></h5>
-                                <img src="uploads/footer/details-payment.png" alt="payment">
+                                <img src="image/details-payment.png" alt="">
                                 <ul>
                                     <li><span>SKU:</span> 3812912</li>
                                     <li><span>Categories:</span> Clothes</li>
@@ -195,7 +195,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="product-details-tab">
@@ -216,7 +215,7 @@
                                         <p class="note">Nam tempus turpis at metus scelerisque placerat nulla deumantos
                                             solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis
                                             ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo
-                                            pharetras loremos.</p>
+                                        pharetras loremos.</p>
                                         <div class="product-details-tab-content-item">
                                             <h5>Products Infomation</h5>
                                             <p>A Pocket PC is a handheld computer, which features many of the same
@@ -225,23 +224,23 @@
                                                 file, coordinate appointments, surf the internet, exchange text messages
                                                 and more. Every product that is labeled as a Pocket PC must be
                                                 accompanied with specific software to operate the unit and must feature
-                                                a touchscreen and touchpad.</p>
+                                            a touchscreen and touchpad.</p>
                                             <p>As is the case with any new technology product, the cost of a Pocket PC
-                                                was substantial during it's early release. For approximately $700.00,
+                                                was substantial during it’s early release. For approximately $700.00,
                                                 consumers could purchase one of top-of-the-line Pocket PCs in 2003.
                                                 These days, customers are finding that prices have become much more
                                                 reasonable now that the newness is wearing off. For approximately
-                                                $350.00, a new Pocket PC can now be purchased.</p>
+                                            $350.00, a new Pocket PC can now be purchased.</p>
                                         </div>
                                         <div class="product-details-tab-content-item">
                                             <h5>Material used</h5>
-                                            <p>Polyester is deemed lower quality due to its none natural quality's. Made
+                                            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
                                                 from synthetic materials, not natural like wool. Polyester suits become
                                                 creased easily and are known for not being breathable. Polyester suits
                                                 tend to have a shine to them compared to wool and cotton suits, this can
                                                 make the suit look cheap. The texture of velvet is luxurious and
                                                 breathable. Velvet is a great choice for dinner party jacket and can be
-                                                worn all year round.</p>
+                                            worn all year round.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -255,32 +254,32 @@
                                                 file, coordinate appointments, surf the internet, exchange text messages
                                                 and more. Every product that is labeled as a Pocket PC must be
                                                 accompanied with specific software to operate the unit and must feature
-                                                a touchscreen and touchpad.</p>
+                                            a touchscreen and touchpad.</p>
                                             <p>As is the case with any new technology product, the cost of a Pocket PC
-                                                was substantial during it's early release. For approximately $700.00,
+                                                was substantial during it’s early release. For approximately $700.00,
                                                 consumers could purchase one of top-of-the-line Pocket PCs in 2003.
                                                 These days, customers are finding that prices have become much more
                                                 reasonable now that the newness is wearing off. For approximately
-                                                $350.00, a new Pocket PC can now be purchased.</p>
+                                            $350.00, a new Pocket PC can now be purchased.</p>
                                         </div>
                                         <div class="product-details-tab-content-item">
                                             <h5>Material used</h5>
-                                            <p>Polyester is deemed lower quality due to its none natural quality's. Made
+                                            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
                                                 from synthetic materials, not natural like wool. Polyester suits become
                                                 creased easily and are known for not being breathable. Polyester suits
                                                 tend to have a shine to them compared to wool and cotton suits, this can
                                                 make the suit look cheap. The texture of velvet is luxurious and
                                                 breathable. Velvet is a great choice for dinner party jacket and can be
-                                                worn all year round.</p>
+                                            worn all year round.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="tabs-7">
+                                <div class="tab-pane"id="tabs-7">
                                     <div class="product-details-tab-content">
                                         <p class="note">Nam tempus turpis at metus scelerisque placerat nulla deumantos
                                             solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis
                                             ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo
-                                            pharetras loremos.</p>
+                                        pharetras loremos.</p>
                                         <div class="product-details-tab-content-item">
                                             <h5>Products Infomation</h5>
                                             <p>A Pocket PC is a handheld computer, which features many of the same
@@ -289,23 +288,23 @@
                                                 file, coordinate appointments, surf the internet, exchange text messages
                                                 and more. Every product that is labeled as a Pocket PC must be
                                                 accompanied with specific software to operate the unit and must feature
-                                                a touchscreen and touchpad.</p>
+                                            a touchscreen and touchpad.</p>
                                             <p>As is the case with any new technology product, the cost of a Pocket PC
-                                                was substantial during it's early release. For approximately $700.00,
+                                                was substantial during it’s early release. For approximately $700.00,
                                                 consumers could purchase one of top-of-the-line Pocket PCs in 2003.
                                                 These days, customers are finding that prices have become much more
                                                 reasonable now that the newness is wearing off. For approximately
-                                                $350.00, a new Pocket PC can now be purchased.</p>
+                                            $350.00, a new Pocket PC can now be purchased.</p>
                                         </div>
                                         <div class="product-details-tab-content-item">
                                             <h5>Material used</h5>
-                                            <p>Polyester is deemed lower quality due to its none natural quality's. Made
+                                            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
                                                 from synthetic materials, not natural like wool. Polyester suits become
                                                 creased easily and are known for not being breathable. Polyester suits
                                                 tend to have a shine to them compared to wool and cotton suits, this can
                                                 make the suit look cheap. The texture of velvet is luxurious and
                                                 breathable. Velvet is a great choice for dinner party jacket and can be
-                                                worn all year round.</p>
+                                            worn all year round.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -317,156 +316,157 @@
         </div>
     </section>
     
-    <section class="related spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="related-title">Related Product</h3>
-                </div>
+<section class="related spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="related-title">Related Product</h3>
             </div>
-            <div class="row gx-custom gy-4 mf-product__grid">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="mf-product__card">
-                        <div class="mf-product__img-wrap">
-                            <img src="uploads/shop/g1.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
-                            <span class="mf-product__badge mf-product__badge--new">New</span>
-                            <div class="mf-product__actions">
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/heart.png" alt="Wishlist"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/compare.png" alt="Compare"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/search.png" alt="Quick View"></a>
-                            </div>
-                        </div>
-                        <div class="mf-product__info">
-                            <div class="mf-product__name-wrap">
-                                <h6 class="mf-product__name">Piqué Biker Jacket</h6>
-                                <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                            </div>
-                            <div class="mf-product__stars">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="mf-product__bottom">
-                                <div class="mf-product__price">$67.24</div>
-                                <div class="mf-product__colors">
-                                    <span class="mf-product__color" style="background:#5e64d1;"></span>
-                                    <span class="mf-product__color" style="background:#404a47;"></span>
-                                    <span class="mf-product__color" style="background:#d5a667;"></span>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+
+    <div class="row gx-custom gy-4 mf-product__grid">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
+            <div class="mf-product__card">
+                <div class="mf-product__img-wrap">
+                    <img src="uploads/shop/g1.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
+                    <span class="mf-product__badge mf-product__badge--new">New</span>
+                    <div class="mf-product__actions">
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
                     </div>
                 </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="mf-product__card">
-                        <div class="mf-product__img-wrap">
-                            <img src="uploads/shop/g2.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
-                            <div class="mf-product__actions">
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/heart.png" alt="Wishlist"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/compare.png" alt="Compare"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/search.png" alt="Quick View"></a>
-                            </div>
-                        </div>
-                        <div class="mf-product__info">
-                            <div class="mf-product__name-wrap">
-                                <h6 class="mf-product__name">Piqué Biker Jacket</h6>
-                                <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                            </div>
-                            <div class="mf-product__stars">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="mf-product__bottom">
-                                <div class="mf-product__price">$67.24</div>
-                                <div class="mf-product__colors">
-                                    <span class="mf-product__color" style="background:#5e64d1;"></span>
-                                    <span class="mf-product__color" style="background:#404a47;"></span>
-                                    <span class="mf-product__color" style="background:#d5a667;"></span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="mf-product__info">
+                    <div class="mf-product__name-wrap">
+                        <h6 class="mf-product__name">Piqué Biker Jacket</h6>
+                        <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
                     </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="mf-product__card">
-                        <div class="mf-product__img-wrap">
-                            <img src="uploads/shop/g3.jpg" alt="Multi-pocket Chest Bag" class="mf-product__img">
-                            <span class="mf-product__badge mf-product__badge--sale">Sale</span>
-                            <div class="mf-product__actions">
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/heart.png" alt="Wishlist"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/compare.png" alt="Compare"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/search.png" alt="Quick View"></a>
-                            </div>
-                        </div>
-                        <div class="mf-product__info">
-                            <div class="mf-product__name-wrap">
-                                <h6 class="mf-product__name">Multi-pocket Chest Bag</h6>
-                                <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                            </div>
-                            <div class="mf-product__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="mf-product__bottom">
-                                <div class="mf-product__price">$43.48</div>
-                                <div class="mf-product__colors">
-                                    <span class="mf-product__color" style="background:#5e64d1;"></span>
-                                    <span class="mf-product__color" style="background:#404a47;"></span>
-                                    <span class="mf-product__color" style="background:#d5a667;"></span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mf-product__stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="mf-product__card">
-                        <div class="mf-product__img-wrap">
-                            <img src="uploads/shop/g4.jpg" alt="Diagonal Textured Cap" class="mf-product__img">
-                            <div class="mf-product__actions">
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/heart.png" alt="Wishlist"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/compare.png" alt="Compare"></a>
-                                <a href="#" class="mf-product__action-btn"><img src="assets/img/search.png" alt="Quick View"></a>
-                            </div>
-                        </div>
-                        <div class="mf-product__info">
-                            <div class="mf-product__name-wrap">
-                                <h6 class="mf-product__name">Diagonal Textured Cap</h6>
-                                <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                            </div>
-                            <div class="mf-product__stars">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="mf-product__bottom">
-                                <div class="mf-product__price">$60.9</div>
-                                <div class="mf-product__colors">
-                                    <span class="mf-product__color" style="background:#5e64d1;"></span>
-                                    <span class="mf-product__color" style="background:#404a47;"></span>
-                                    <span class="mf-product__color" style="background:#d5a667;"></span>
-                                </div>
-                            </div>
+                    <div class="mf-product__bottom">
+                        <div class="mf-product__price">$67.24</div>
+                        <div class="mf-product__colors">
+                            <span class="mf-product__color" style="background:#5e64d1;"></span>
+                            <span class="mf-product__color" style="background:#404a47;"></span>
+                            <span class="mf-product__color" style="background:#d5a667;"></span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
-    </section>
+        </div>
 
-    <footer class="mf-footer">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
+            <div class="mf-product__card">
+                <div class="mf-product__img-wrap">
+                    <img src="uploads/shop/g2.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
+                    <div class="mf-product__actions">
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
+                    </div>
+                </div>
+                <div class="mf-product__info">
+                    <div class="mf-product__name-wrap">
+                        <h6 class="mf-product__name">Piqué Biker Jacket</h6>
+                        <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
+                    </div>
+                    <div class="mf-product__stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="mf-product__bottom">
+                        <div class="mf-product__price">$67.24</div>
+                        <div class="mf-product__colors">
+                            <span class="mf-product__color" style="background:#5e64d1;"></span>
+                            <span class="mf-product__color" style="background:#404a47;"></span>
+                            <span class="mf-product__color" style="background:#d5a667;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
+            <div class="mf-product__card">
+                <div class="mf-product__img-wrap">
+                    <img src="uploads/shop/g3.jpg" alt="Multi-pocket Chest Bag" class="mf-product__img">
+                    <span class="mf-product__badge mf-product__badge--sale">Sale</span>
+                    <div class="mf-product__actions">
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
+                    </div>
+                </div>
+                <div class="mf-product__info">
+                    <div class="mf-product__name-wrap">
+                        <h6 class="mf-product__name">Multi-pocket Chest Bag</h6>
+                        <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
+                    </div>
+                    <div class="mf-product__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="mf-product__bottom">
+                        <div class="mf-product__price">$43.48</div>
+                        <div class="mf-product__colors">
+                            <span class="mf-product__color" style="background:#5e64d1;"></span>
+                            <span class="mf-product__color" style="background:#404a47;"></span>
+                            <span class="mf-product__color" style="background:#d5a667;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
+            <div class="mf-product__card">
+                <div class="mf-product__img-wrap">
+                    <img src="uploads/shop/g4.jpg" alt="Diagonal Textured Cap" class="mf-product__img">
+                    <div class="mf-product__actions">
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
+                        <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
+                    </div>
+                </div>
+                <div class="mf-product__info">
+                    <div class="mf-product__name-wrap">
+                        <h6 class="mf-product__name">Diagonal Textured Cap</h6>
+                        <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
+                    </div>
+                    <div class="mf-product__stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="mf-product__bottom">
+                        <div class="mf-product__price">$60.9</div>
+                        <div class="mf-product__colors">
+                            <span class="mf-product__color" style="background:#5e64d1;"></span>
+                            <span class="mf-product__color" style="background:#404a47;"></span>
+                            <span class="mf-product__color" style="background:#d5a667;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>    
+</section>
+
+<footer class="mf-footer">
         <div class="container">
             <div class="row g-4 mf-footer__grid">
                 <div class="col-lg-3 col-md-6 col-12">
@@ -535,9 +535,9 @@
         </div>
     </footer>
 
-    <script src="assets/vendors/Jquery/jquery-4.0.0.min.js"></script>
-    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/shop-details.js"></script>
+    <script src="assets/library/uploads/swiper-bundle.min.js"></script>
+    <script src="assets/library/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/shop-detail.js"></script>
 </body>
 </html>
