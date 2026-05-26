@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Male-Fashion | Template</title>
-    <link rel="stylesheet" href="assets/library/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/library/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/library/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
 </head>
 <body>
 <!-- HTML của trần quốc tuấn -->
@@ -35,7 +34,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand logo" href="index.html">
-                    <img src="image/logo.png" alt="Male Fashion">
+                    <img src="uploads/footer/logo.png" alt="Male Fashion">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -44,24 +43,15 @@
                     <ul class="navbar-nav mx-auto nav-list">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                <li><a class="dropdown-item" href="shop-details.html">Shop Details</a></li>
-                                <li><a class="dropdown-item" href="shopping-cart.html">Shopping Cart</a></li>
-                                <li><a class="dropdown-item" href="checkout.html">Check Out</a></li>
-                                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
                     </ul>
                     <div class="header-icons d-flex align-items-center gap-3">
-                        <a href="#"><img src="assets/icon/search.png" alt=""></a>
-                        <a href="#"><img src="assets/icon/heart.png" alt=""></a>
-                        <a href="#">
-                            <img src="assets/icon/cart.png" alt="">
+                        <a href="#"><img src="assets/img/search.png" alt=""></a>
+                        <a href="#"><img src="assets/img/heart.png" alt=""></a>
+                        <a href="shopping-cart.html" class="cart-link d-flex align-items-center gap-1">
+                            <img src="assets/img/cart.png" alt="">
                             <span>0</span>
                         </a>
                         <span class="cart-total">$0.00</span>
@@ -75,31 +65,30 @@
         <div class="swiper hero-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="image/hero-1.jpg" alt="Hero 1" class="hero-bg">
+                    <img src="uploads/hero/hero-1.jpg" alt="Hero 1" class="hero-bg">
                     <div class="container hero-container">
                         <div class="hero-content">
                             <span class="hero-subtitle">Summer Collection</span>
                             <h2 class="hero-title">Fall - Winter Collections 2030</h2>
                             <p class="hero-desc">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
-                            <a href="#" class="btn-custom">Shop now <span class="arrow_right"></span></a>
+                            <a href="shop.html" class="btn-custom">Shop now <span class="arrow_right"></span></a>
                         </div>
                         <div class="hero-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>   
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-pinterest"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <div class="swiper-slide">
-                    <img src="image/hero-2.jpg" alt="Hero 2" class="hero-bg">
+                    <img src="uploads/hero/hero-2.jpg" alt="Hero 2" class="hero-bg">
                     <div class="container hero-container">
                         <div class="hero-content">
                             <span class="hero-subtitle">Summer Collection</span>
                             <h2 class="hero-title">Fall - Winter Collections 2030</h2>
                             <p class="hero-desc">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
-                            <a href="#" class="btn-custom">Shop now <span class="arrow_right"></span></a>
+                            <a href="shop.html" class="btn-custom">Shop now <span class="arrow_right"></span></a>
                         </div>
                         <div class="hero-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -110,7 +99,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
@@ -124,34 +112,32 @@
                     <div class="banner-item banner-item--large">
                         <div class="banner-item-text">
                             <h2 class="banner-heading">Clothing Collections 2030</h2>
-                            <a href="#" class="banner-link">Shop now</a>
+                            <a href="shop.html" class="banner-link">Shop now</a>
                         </div>
                         <div class="banner-item-pic">
-                            <img src="image/banner-1.jpg" alt="">
+                            <img src="uploads/banner/banner-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-5">
                     <div class="banner-item banner-item--middle">
                         <div class="banner-item-pic">
-                            <img src="image/banner-2.jpg" alt="">
+                            <img src="uploads/banner/banner-2.jpg" alt="">
                         </div>
                         <div class="banner-item-text">
                             <h2 class="banner-heading">Accessories</h2>
-                            <a href="#" class="banner-link">Shop now</a>
+                            <a href="shop.html" class="banner-link">Shop now</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-7">
                     <div class="banner-item banner-item--last">
                         <div class="banner-item-text">
                             <h2 class="banner-heading">Shoes Spring 2030</h2>
-                            <a href="#" class="banner-link">Shop now</a>
+                            <a href="shop.html" class="banner-link">Shop now</a>
                         </div>
                         <div class="banner-item-pic">
-                            <img src="image/banner-3.jpg" alt="">
+                            <img src="uploads/banner/banner-3.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -159,8 +145,8 @@
         </div>
     </section>
 
-<!-- HTML của  nguyễn khương tịnh -->
-        <section class="mf-product">
+<!-- HTML của nguyễn khương tịnh -->
+    <section class="mf-product">
         <div class="container">
             <div class="mf-tabs">
                 <ul class="mf-tabs__list list-unstyled d-flex mb-0">
@@ -176,472 +162,175 @@
                 </ul>
             </div>
 
-    <div class="row gx-custom gy-4 mf-product__grid">
+            <!-- Grid rỗng – jQuery sẽ render card vào đây -->
+            <div class="row gx-custom gy-4 mf-product__grid"></div>
 
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g1.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
-                <span class="mf-product__badge mf-product__badge--new">New</span>
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Piqué Biker Jacket</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$67.24</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g2.jpg" alt="Piqué Biker Jacket" class="mf-product__img">
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Piqué Biker Jacket</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$67.24</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="mf-deal">
+        <div class="container-fluid px-0">
+            <div class="row g-0 align-items-center mf-deal__inner">
 
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g3.jpg" alt="Multi-pocket Chest Bag" class="mf-product__img">
-                <span class="mf-product__badge mf-product__badge--sale">Sale</span>
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Multi-pocket Chest Bag</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$43.48</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g4.jpg" alt="Diagonal Textured Cap" class="mf-product__img">
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Diagonal Textured Cap</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$60.9</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g5.jpg" alt="Lether Backpack" class="mf-product__img">
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Lether Backpack</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$31.37</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g6.jpg" alt="Ankle Boots" class="mf-product__img">
-                <span class="mf-product__badge mf-product__badge--sale">Sale</span>
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Ankle Boots</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$98.49</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers new-arrivals">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g7.jpg" alt="T-shirt Contrast Pocket" class="mf-product__img">
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">T-shirt Contrast Pocket</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$49.66</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" data-tab="best-sellers hot-sales">
-        <div class="mf-product__card">
-            <div class="mf-product__img-wrap">
-                <img src="image/g8.jpg" alt="Basic Flowing Scarf" class="mf-product__img">
-                <div class="mf-product__actions">
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/heart.png" alt="Wishlist"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/compare.png" alt="Compare"></a>
-                    <a href="#" class="mf-product__action-btn"><img src="assets/icon/search.png" alt="Quick View"></a>
-                </div>
-            </div>
-            <div class="mf-product__info">
-                <div class="mf-product__name-wrap">
-                    <h6 class="mf-product__name">Basic Flowing Scarf</h6>
-                    <a href="#" class="mf-btn mf-btn--cart-hover">+ Add To Cart</a>
-                </div>
-                <div class="mf-product__stars">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="mf-product__bottom">
-                    <div class="mf-product__price">$26.28</div>
-                    <div class="mf-product__colors">
-                        <span class="mf-product__color" style="background:#5e64d1;"></span>
-                        <span class="mf-product__color" style="background:#404a47;"></span>
-                        <span class="mf-product__color" style="background:#d5a667;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-</section>
-
-<section class="mf-deal">
-    <div class="container-fluid px-0">
-        <div class="row g-0 align-items-center mf-deal__inner">
-
-            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
-                <div class="mf-categories-box">
-                    <div class="text"><a href="#" class="mf-categories__item">Clothings Hot</a>
-                    <a href="#" class="mf-categories__item active">Shoe Collection</a>
-                    <a href="#" class="mf-categories__item">Accessories</a>
-                </div>
-                    
-                </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                <div class="mf-deal__img-wrap">
-                    
-                    <div class="mf-deal__sale-badge">
-                        <span>Sale Of</span>
-                        <h5>$29.99</h5>
-                    </div>
-
-                    <img src="image/g9.png" alt="Deal" class="mf-deal__img">
-
-                </div>
-            </div>
-
-            <div class="col-xl-5 col-lg-5 col-md-4 col-12">
-                <div class="mf-deal__content">
-
-                    <span class="mf-deal__label-top">Deal Of The Week</span>
-
-                    <h2 class="mf-deal__product-name">
-                        Multi-pocket Chest Bag Black
-                    </h2>
-
-                    <div class="mf-countdown">
-                        <div class="mf-countdown__numbers">
-                            <span>00</span>
-                            <span class="sep">:</span>
-                            <span>00</span>
-                            <span class="sep">:</span>
-                            <span>00</span>
-                            <span class="sep">:</span>
-                            <span>00</span>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+                    <div class="mf-categories-box">
+                        <div class="text">
+                            <a href="#" class="mf-categories__item">Clothings Hot</a>
+                            <a href="#" class="mf-categories__item active">Shoe Collection</a>
+                            <a href="#" class="mf-categories__item">Accessories</a>
                         </div>
-                        <div class="mf-countdown__labels">
-                            <span>Days</span>
-                            <span>Hours</span>
-                            <span>Minutes</span>
-                            <span>Seconds</span>
-                        </div>
-                    <a href="#" class="mf-btn mf-btn--primary">Shop Now</a>
-
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </div>
-</section>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+                    <div class="mf-deal__img-wrap">
+                        <div class="mf-deal__sale-badge">
+                            <span>Sale Of</span>
+                            <h5>$29.99</h5>
+                        </div>
+                        <img src="uploads/shop/g9.png" alt="Deal" class="mf-deal__img">
+                    </div>
+                </div>
 
-
-
-<!-- HTML của võ văn huy -->
-      <section class="mf-instagram">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-8">
-                    <div class="mf-instagram__gallery">
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-1.jpg" alt="Instagram 1" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
+                <div class="col-xl-5 col-lg-5 col-md-4 col-12">
+                    <div class="mf-deal__content">
+                        <span class="mf-deal__label-top">Deal Of The Week</span>
+                        <h2 class="mf-deal__product-name">Multi-pocket Chest Bag Black</h2>
+                        <div class="mf-countdown">
+                            <div class="mf-countdown__numbers">
+                                <span>00</span>
+                                <span class="sep">:</span>
+                                <span>00</span>
+                                <span class="sep">:</span>
+                                <span>00</span>
+                                <span class="sep">:</span>
+                                <span>00</span>
+                            </div>
+                            <div class="mf-countdown__labels">
+                                <span>Days</span>
+                                <span>Hours</span>
+                                <span>Minutes</span>
+                                <span>Seconds</span>
                             </div>
                         </div>
-
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-2.jpg" alt="Instagram 2" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-                            </div>
-                        </div>
-
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-3.jpg" alt="Instagram 3" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-                            </div>
-                        </div>
-
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-4.jpg" alt="Instagram 4" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-                            </div>
-                        </div>
-
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-5.jpg" alt="Instagram 5" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-                            </div>
-                        </div>
-
-                        <div class="mf-instagram__item">
-                            <img src="image/instagram-6.jpg" alt="Instagram 6" class="mf-instagram__img">
-                            <div class="mf-instagram__overlay">
-                                <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="mf-instagram__text">
-                        <h2>Instagram</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <h3>#Male_Fashion</h3>
+                        <a href="#" class="mf-btn mf-btn--primary">Shop Now</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+<!-- HTML của võ văn huy -->
+    <section class="mf-instagram">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mf-instagram__gallery">
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-1.jpg" alt="Instagram 1" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-2.jpg" alt="Instagram 2" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-3.jpg" alt="Instagram 3" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-4.jpg" alt="Instagram 4" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-5.jpg" alt="Instagram 5" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <div class="mf-instagram__item">
+                            <img src="uploads/instagram/instagram-6.jpg" alt="Instagram 6" class="mf-instagram__img">
+                            <div class="mf-instagram__overlay">
+                                <a href="#"><img src="uploads/instagram/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mf-instagram__text">
+                        <h2>Instagram</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>#Male_Fashion</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="mf-blog">
         <div class="container">
             <div class="mf-section-heading text-center mb-4">
                 <span class="mf-section-heading__label">Latest News</span>
                 <h2 class="mf-section-heading__title">Fashion New Trends</h2>
             </div>
-
             <div class="row g-4 mf-blog__grid">
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="mf-blog__card">
                         <div class="mf-blog__img-wrap">
-                            <img src="image/blog-1.jpg" alt="Blog 1" class="mf-blog__img">
+                            <img src="uploads/blog/blog-1.jpg" alt="Blog 1" class="mf-blog__img">
                         </div>
                         <div class="mf-blog__body">
                             <div class="mf-blog__meta d-flex align-items-center gap-2">
-                                <img src="assets/icon/calendar.png" alt="Date">
+                                <img src="assets/img/calendar.png" alt="Date">
                                 <span>16 February 2020</span>
                             </div>
                             <h5 class="mf-blog__title">
                                 <a href="#">What Curling Irons Are The Best Ones</a>
                             </h5>
-                            <a href="#" class="mf-blog__readmore">Read More</a>
+                            <a href="blog-details.html" class="mf-blog__readmore">Read More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="mf-blog__card">
                         <div class="mf-blog__img-wrap">
-                            <img src="image/blog-2.jpg" alt="Blog 2" class="mf-blog__img">
+                            <img src="uploads/blog/blog-2.jpg" alt="Blog 2" class="mf-blog__img">
                         </div>
                         <div class="mf-blog__body">
                             <div class="mf-blog__meta d-flex align-items-center gap-2">
-                                <img src="assets/icon/calendar.png" alt="Date">
+                                <img src="assets/img/calendar.png" alt="Date">
                                 <span>21 February 2020</span>
                             </div>
                             <h5 class="mf-blog__title">
                                 <a href="#">Eternity Bands Do Last Forever</a>
                             </h5>
-                            <a href="#" class="mf-blog__readmore">Read More</a>
+                            <a href="blog-details.html" class="mf-blog__readmore">Read More</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="mf-blog__card">
                         <div class="mf-blog__img-wrap">
-                            <img src="image/blog-3.jpg" alt="Blog 3" class="mf-blog__img">
+                            <img src="uploads/blog/blog-3.jpg" alt="Blog 3" class="mf-blog__img">
                         </div>
                         <div class="mf-blog__body">
                             <div class="mf-blog__meta d-flex align-items-center gap-2">
-                                <img src="assets/icon/calendar.png" alt="Date">
+                                <img src="assets/img/calendar.png" alt="Date">
                                 <span>28 February 2020</span>
                             </div>
                             <h5 class="mf-blog__title">
                                 <a href="#">The Health Benefits Of Sunglasses</a>
                             </h5>
-                            <a href="#" class="mf-blog__readmore">Read More</a>
+                            <a href="blog-details.html" class="mf-blog__readmore">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -655,17 +344,16 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="mf-footer__about">
                         <a href="#" class="mf-footer__logo">
-                            <img src="image/footer-logo.png" alt="Male Fashion">
+                            <img src="uploads/footer/footer-logo.png" alt="Male Fashion">
                         </a>
                         <p class="mf-footer__desc">
                             The customer is at the heart of our unique business model, which includes design.
                         </p>
                         <a href="#" class="mf-footer__payment">
-                            <img src="image/payment.png" alt="Payment Methods">
+                            <img src="uploads/footer/payment.png" alt="Payment Methods">
                         </a>
                     </div>
                 </div>
-
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                     <div class="mf-footer__col">
                         <h6 class="mf-footer__col-title">Shopping</h6>
@@ -677,7 +365,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="mf-footer__col">
                         <h6 class="mf-footer__col-title">Support</h6>
@@ -689,7 +376,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="mf-footer__col mf-footer__newsletter">
                         <h6 class="mf-footer__col-title">Newsletter</h6>
@@ -706,20 +392,20 @@
                 </div>
             </div>
         </div>
-
         <div class="mf-footer__bottom">
             <div class="container">
                 <p class="mf-footer__copy text-center mb-0">
-                    Copyright &copy; 2020 All rights reserved | This template is made with 
+                    Copyright &copy; 2020 All rights reserved | This template is made with
                     <i class="fa-regular fa-heart" style="color: rgb(229, 54, 55);"></i> by
                     <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 </p>
             </div>
         </div>
     </footer>
-    <script src="assets/library/vendor/swiper-bundle.min.js"></script>
-    <script src="assets/library/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/Jquery/jquery-4.0.0.js"></script>
     <script src="assets/js/main.js"></script>
-    
 </body>
 </html>
