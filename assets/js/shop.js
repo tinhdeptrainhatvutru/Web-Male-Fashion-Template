@@ -138,7 +138,7 @@ $(document).ready(function () {
 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
     <div class="mf-product__card">
         <div class="mf-product__img-wrap">
-            <img src="${p.image}" alt="${p.name}" class="mf-product__img">
+            <a href="shop-details.html?id=${p.id}"><img src="${p.image}" alt="${p.name}" class="mf-product__img"></a>
             ${buildBadge(p.badge)}
             <div class="mf-product__actions">
                 <a href="#" class="mf-product__action-btn" title="Wishlist">

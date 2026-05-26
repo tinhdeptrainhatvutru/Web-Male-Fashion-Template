@@ -43,23 +43,14 @@
                     <ul class="navbar-nav mx-auto nav-list">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                <li><a class="dropdown-item" href="shop-details.html">Shop Details</a></li>
-                                <li><a class="dropdown-item" href="shopping-cart.html">Shopping Cart</a></li>
-                                <li><a class="dropdown-item" href="checkout.html">Check Out</a></li>
-                                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
                     </ul>
                     <div class="header-icons d-flex align-items-center gap-3">
                         <a href="#"><img src="assets/img/search.png" alt=""></a>
                         <a href="#"><img src="assets/img/heart.png" alt=""></a>
-                        <a href="#" class="cart-btn">
+                        <a href="shopping-cart.html" class="cart-link d-flex align-items-center gap-1">
                             <img src="assets/img/cart.png" alt="">
                             <span class="cart-count">0</span>
                         </a>
@@ -87,7 +78,7 @@
     ============================================================ -->
     <section class="about-hero">
         <div class="about-hero__img">
-            <img src="uploads/about/about-hero.jpg" alt="About Us Hero" class="w-100">
+            <img src="uploads/about/about-us.jpg" alt="About Us Hero" class="w-100">
         </div>
         <div class="container">
             <div class="row about-info mt-5">
@@ -121,12 +112,12 @@
         <div class="row g-0">
             <div class="col-lg-6 col-md-6">
                 <div class="about-quote__text">
-                    <span class="about-quote__icon">"</span>
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
                     <blockquote class="about-quote__content">
                         "Going out after work? Take your butane curling iron with you to the office, heat it up, style your hair before you leave the office and you won't have to make a trip back home."
                     </blockquote>
                     <div class="about-quote__author d-flex align-items-center mt-4">
-                        <img src="uploads/about/author-avatar.jpg" alt="Augusta Schultz"
+                        <img src="uploads/blog-details/blog-author.jpg" alt="Augusta Schultz"
                              class="about-quote__avatar rounded-circle me-3"
                              style="width:56px;height:56px;object-fit:cover;">
                         <div>
@@ -138,7 +129,7 @@
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="about-quote__img">
-                    <img src="uploads/about/about-quote.jpg" alt="Quote Image" class="w-100 h-100" style="object-fit:cover;">
+                    <img src="uploads/about/testimonial-pic.jpg" alt="Quote Image" class="w-100 h-100" style="object-fit:cover;">
                 </div>
             </div>
         </div>
@@ -148,28 +139,28 @@
         SECTION 3: SỐ LIỆU THỐNG KÊ
         Trần Quốc Tuấn
     ============================================================ -->
-    <section class="about-counter">
+        <section class="about-counter">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-counter__item">
                         <h2 class="about-counter__number">102</h2>
                         <p class="about-counter__label">Our<br>Clients</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-counter__item">
                         <h2 class="about-counter__number">30</h2>
                         <p class="about-counter__label">Total<br>Categories</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-counter__item">
                         <h2 class="about-counter__number">102</h2>
                         <p class="about-counter__label">In<br>Country</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-counter__item">
                         <h2 class="about-counter__number">98%</h2>
                         <p class="about-counter__label">Happy<br>Customer</p>
@@ -179,10 +170,6 @@
         </div>
     </section>
 
-    <!-- ============================================================
-        SECTION 4: OUR TEAM
-        Trần Quốc Tuấn
-    ============================================================ -->
     <section class="about-team">
         <div class="container">
             <div class="about-team__heading text-center">
@@ -190,28 +177,28 @@
                 <h2 class="about-team__title">Meet Our Team</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-team__member">
                         <img src="uploads/about/team-1.jpg" alt="John Smith" class="w-100">
                         <h5 class="about-team__name">John Smith</h5>
                         <p class="about-team__role">Fashion Design</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-team__member">
                         <img src="uploads/about/team-2.jpg" alt="Christine Wise" class="w-100">
                         <h5 class="about-team__name">Christine Wise</h5>
                         <p class="about-team__role">C.E.O</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-team__member">
                         <img src="uploads/about/team-3.jpg" alt="Sean Robbins" class="w-100">
                         <h5 class="about-team__name">Sean Robbins</h5>
                         <p class="about-team__role">Manager</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="about-team__member">
                         <img src="uploads/about/team-4.jpg" alt="Lucy Myers" class="w-100">
                         <h5 class="about-team__name">Lucy Myers</h5>
@@ -222,11 +209,12 @@
         </div>
     </section>
 
+
     <!-- ============================================================
         SECTION 5: HAPPY CLIENTS / PARTNER LOGOS
         Võ Văn Huy
     ============================================================ -->
-    <section class="about-clients">
+     <section class="about-clients">
         <div class="container">
             <div class="about-clients__heading text-center">
                 <span class="about-clients__label">PARTNER</span>

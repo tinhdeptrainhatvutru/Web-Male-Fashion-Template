@@ -455,12 +455,14 @@ body {
     margin-bottom: 0px;
 }
 
-/*RELATED*/
 .related-title{
     font-size: 30px;
     color: #111111;
     font-weight: 700;
     margin-bottom: 45px;
     text-align: center;
+}
+.related.spad{
+    margin-bottom: 100px;
 }
    

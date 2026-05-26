@@ -38,7 +38,7 @@ $(document).ready(function () {
                 <tr>
                     <td class="product__cart__item">
                         <div class="product__cart__item__pic">
-                            <img src="${item.image}" alt="${item.name}">
+                            <a href="shop-details.html?id=${item.id}"><img src="${item.image}" alt="${item.name}"></a>
                         </div>
                         <div class="product__cart__item__text">
                             <h6>${item.name}</h6>
