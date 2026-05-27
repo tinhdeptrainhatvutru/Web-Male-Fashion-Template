@@ -1,15 +1,23 @@
+/* ==========================================================================
+   BASE STYLE
+   ========================================================================== */
 body {
     color: #111111;
 }
 
-.breadcrumb-option {
-    background: #f3f2ee; 
-    padding: 40px 0;    
+/* ==========================================================================
+   BREADCRUMB AREA
+   ========================================================================== */
+.page-nav {
+    background-color: #f3f2ee !important; 
+    background: #f3f2ee !important;
+    padding: 40px 0 !important;    
     display: block;
     width: 100%;
+    text-align: left; 
 }
 
-.breadcrumb__text h4 {
+.nav-box .nav-title {
     color: #111111;
     font-size: 24px;
     font-weight: 700;
@@ -17,61 +25,89 @@ body {
     text-transform: capitalize;
 }
 
-.breadcrumb__links a {
-    font-size: 14px;
-    color: #111111;
-    text-decoration: none;
-    font-weight: 500;
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 8px; 
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    font-size: 14px !important;
+    color: #111111 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important; 
     transition: all 0.3s;
 }
 
-.breadcrumb__links a:hover {
-    color: #e53637;
+.nav-links a:hover {
+    color: #e53637 !important;
 }
 
-.breadcrumb__links i {
-    font-size: 12px;
-    color: #888888;
+/* Định dạng dấu mũi tên phân cách */
+.nav-links i,
+.nav-links .breadcrumb-separator {
+    font-size: 14px !important;
+    color: #444444 !important;
+    font-weight: 400 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
 }
 
-.breadcrumb__links span {
-    font-size: 14px;
-    color: #b7b7b7;
+/* Tự động chèn dấu mũi tên góc phải bằng ký tự hệ thống an toàn */
+.nav-links .breadcrumb-separator::before {
+    content: "\203A"; 
+    font-family: sans-serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
 }
 
-.checkout.spad {
+.nav-links span:last-child:not(.breadcrumb-separator) {
+    font-size: 14px !important;
+    color: #b7b7b7 !important; 
+    font-weight: 400 !important; 
+}
+
+/* ==========================================================================
+   CHECKOUT MAIN PLATFORM
+   ========================================================================== */
+.checkout-wrap {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.checkout .row {
+.checkout-wrap .row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start; 
 }
 
-.coupon__code {
+.coupon-box {
     color: #111111;
     font-size: 14px;
     border-top: 2px solid #2ecc71; 
     background: #f5f5f5;
-    padding: 23px 30px 18px;
-    margin-bottom: 48px; 
+    padding: 16px 30px;
+    margin-bottom: 48px !important; 
     width: 100% !important;   
     max-width: 100%;
-    height: 53px; 
+    min-height: 53px;
+    height: auto; 
     display: flex;
     align-items: center;
     box-sizing: border-box; 
     margin-top: 0px;
 }
 
-.coupon__code i {
+.coupon-box i {
     color: #e53637; 
     margin-right: 8px;
 }
 
-.coupon__code a {
+.coupon-box a {
     color: #111111;
     text-decoration: underline;
     font-weight: 600;
@@ -79,7 +115,7 @@ body {
     margin-right: 5px !important; 
 }
 
-.checkout__title {
+.bill-title {
     color: #111111;
     font-weight: 600;        
     font-size: 16px;         
@@ -91,107 +127,22 @@ body {
     margin-bottom: 30px;    
 }
 
-.checkout__order {
-    background: #f3f2ee; 
-    padding: 40px 30px;
-    position: relative;
-    top: 0px;
-    margin-top: -3px !important; 
-    padding-top: 40px !important;
-}
-
-.checkout__order h4 {
-    color: #111111;
-    font-weight: 700;                 
-    font-size: 24px;                  
-    text-transform: uppercase;
-    border-bottom: 1px solid #d7d7d7; 
-    padding-bottom: 25px;
-    margin-bottom: 30px;
-    letter-spacing: 0px;
-    margin-top: 0px !important; 
-}
-
-.checkout__order__products {
-    font-size: 16px;                  
-    color: #111111;
-    font-weight: 400;                 
-    text-transform: none !important;  
-    border-bottom: none !important;   
-    padding-bottom: 0px !important;   
-    margin-bottom: 15px;              
-}
-
-.checkout__order__products span {
-    float: right; 
-}
-
-.checkout__total__products {
-    margin-bottom: 20px;
-    padding-left: 0px;                
-}
-
-.checkout__total__products li {
-    font-size: 16px;                  
-    color: #444444;
-    list-style: none;
-    line-height: 40px;                
-}
-
-.checkout__total__products li span {
-    color: #111111;
-    font-weight: 400;                 
-    float: right; 
-}
-
-.checkout__total__all {
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
-    padding: 15px 0px;
-    margin-bottom: 25px;
-    padding-left: 0px;
-}
-
-.checkout__total__all li {
-    font-size: 16px;
-    color: #111111;
-    font-weight: 400;                 
-    list-style: none;
-    line-height: 40px;
-}
-
-.checkout__total__all li span {
-    color: #e53637;                   
-    font-weight: 600;                 
-    float: right;  
-}
-
-.checkout__policy-text, 
-.checkout__order p {
-    font-size: 16px !important;    
-    color: #444444 !important;     
-    font-weight: 400 !important;   
-    line-height: 24px !important;  
-    margin-top: 0px !important;   
-    margin-bottom: 15px !important;
-}
-
-.checkout__input {
+.bill-group {
     margin-bottom: 24px; 
 }
 
-.checkout__input p {
+.bill-group .bill-label {
     color: #111111;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.checkout__input p span {
+.bill-group .bill-label span {
     color: #e53637; 
     margin-left: 3px;
 }
 
-.checkout__input input {
+.bill-group .bill-control {
     height: 50px;
     width: 100%;
     border: 1px solid #e1e1e1;
@@ -203,23 +154,118 @@ body {
     transition: border-color 0.3s;
 }
 
-.checkout__input input:focus {
+.bill-group .bill-control:focus {
     border-color: #111111; 
 }
 
-.checkout__input input::placeholder {
+.bill-group .bill-control::placeholder {
     color: #b7b7b7;
 }
 
-.checkout__input__add {
-    margin-bottom: 15px !important;
+.bill-notes {
+    color: #666666; 
+    font-size: 14px;
 }
 
-.checkout__input__checkbox {
+/* ==========================================================================
+   ORDER SUMMARY SIDEBAR
+   ========================================================================== */
+.order-box {
+    background: #f3f2ee; 
+    padding: 40px 30px;
+    position: relative;
+    top: 0px;
+    margin-top: -3px !important; 
+}
+
+.order-box .order-title {
+    color: #111111;
+    font-weight: 700;                  
+    font-size: 24px;                  
+    text-transform: uppercase;
+    border-bottom: 1px solid #d7d7d7; 
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+    margin-top: 0px !important; 
+}
+
+.order-row {
+    font-size: 16px;                  
+    color: #111111;
+    font-weight: 400;                 
+    text-transform: none !important;  
+    border-bottom: none !important;   
+    padding-bottom: 0px !important;   
+    margin-bottom: 20px;              
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-list {
+    margin-bottom: 25px;
+    padding-left: 0px;                
+}
+
+.order-list li {
+    font-size: 16px;                  
+    color: #444444;
+    list-style: none;
+    line-height: 24px; 
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.order-list li span {
+    color: #111111;
+    font-weight: 400;                 
+}
+
+.order-total {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 15px 0px;
+    margin-bottom: 25px;
+    padding-left: 0px;
+}
+
+.order-total li {
+    font-size: 16px;
+    color: #111111; 
+    font-weight: 400;                 
+    list-style: none;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-total li span {
+    font-weight: 600;                 
+}
+
+.order-total li span.price-sub,
+.order-total li span.price-main {
+    color: #e53637 !important;
+}
+
+.order-box p {
+    font-size: 14px !important;    
+    color: #444444 !important;     
+    font-weight: 400 !important;   
+    line-height: 22px !important;  
+    margin-top: 0px !important;   
+    margin-bottom: 20px !important;
+}
+
+/* ==========================================================================
+   CHECKBOX ELEMENTS
+   ========================================================================= */
+.check-item {
     margin-bottom: 15px;
 }
 
-.checkout__input__checkbox label {
+.check-item .check-label {
     font-size: 14px;
     color: #111111;
     font-weight: 600;
@@ -229,7 +275,7 @@ body {
     user-select: none;
 }
 
-.checkout__input__checkbox input {
+.check-item .check-input {
     width: 16px;
     height: 16px;
     margin-right: 12px;
@@ -237,12 +283,10 @@ body {
     accent-color: #111111; 
 }
 
-.checkout__notes-text {
-    color: #666666; 
-    font-size: 14px;
-}
-
-.checkout__order .site-btn {
+/* ==========================================================================
+   SUBMIT BUTTON
+   ========================================================================== */
+.order-box .order-btn {
     width: 100%;
     margin-top: 10px;
     background: #111111;
@@ -257,10 +301,88 @@ body {
     letter-spacing: 0px !important; 
 }
 
-.checkout__order .site-btn:hover {
+.order-box .order-btn:hover {
     background: #e53637; 
 }
 
 .mf-footer__copy i {
     color: rgb(229, 54, 55);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991px) {
+    .checkout-wrap {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .coupon-box {
+        margin-bottom: 35px !important;
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        line-height: 20px;
+    }
+
+    .bill-title {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+    }
+
+    .order-box {
+        margin-top: 40px !important;
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .checkout-wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .page-nav {
+        padding: 30px 0 !important;
+    }
+
+    .nav-box .nav-title {
+        font-size: 20px;
+    }
+
+    .coupon-box {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    .bill-group {
+        margin-bottom: 18px;
+    }
+
+    .bill-group .bill-control {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .order-box .order-title {
+        font-size: 20px;
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+    }
+
+    .order-row, 
+    .order-list li, 
+    .order-total li {
+        font-size: 14px;
+    }
+
+    .order-total li {
+        line-height: 32px;
+    }
+
+    .order-box .order-btn {
+        padding: 14px 0px;
+        font-size: 13px;
+    }
 }

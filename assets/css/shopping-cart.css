@@ -1,16 +1,17 @@
-.breadcrumb-option {
+/* --- BREADCRUMB INDICATOR --- */
+.page-route-indicator-section {
     background: #f3f2ee;
     padding: 40px 0;
 }
  
-.breadcrumb__text h4 {
+.route-map-content h4 {
     color: #111111;
     font-weight: 700;
     margin-bottom: 8px;
     font-family: "Nunito Sans", sans-serif;
 }
  
-.breadcrumb__links a {
+.route-map-anchors a {
     color: #111111;
     font-size: 15px;
     margin-right: 18px;
@@ -18,7 +19,7 @@
     text-decoration: none;
 }
  
-.breadcrumb__links a:after {
+.route-map-anchors a:after {
     content: ">";
     position: absolute;
     right: -14px;
@@ -26,30 +27,31 @@
     color: #111111;
 }
  
-.breadcrumb__links span {
+.route-map-anchors span {
     color: #b7b7b7;
     font-size: 15px;
 }
  
-.shopping-cart.spad {
+/* --- SHOPPING CART WORKSPACE --- */
+.cart-manager-wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
 }
  
-.shopping__cart__table {
+.basket-items-display-panel {
     margin-bottom: 30px;
 }
  
-.shopping__cart__table table {
+.basket-items-display-panel table {
     width: 100%;
     border-collapse: collapse;
 }
  
-.shopping__cart__table thead {
+.basket-items-display-panel thead {
     border-bottom: 1px solid #f2f2f2;
 }
  
-.shopping__cart__table thead th {
+.basket-items-display-panel thead th {
     font-size: 16px;
     color: #111111;
     font-weight: 700;
@@ -57,25 +59,24 @@
     padding: 1px 1px 25px;
 }
  
-/* ĐÃ SỬA: Thay đổi tỷ lệ phần trăm các cột để khung QUANTITY đạt chuẩn ~173.72px */
-.shopping__cart__table thead th:nth-child(1) { width: 52%; text-align: left; } /* Giảm từ 55% xuống 52% */
-.shopping__cart__table thead th:nth-child(2) { width: 23%; text-align: left; } /* Tăng từ 20% lên 23% để rộng ra 173.72px */
-.shopping__cart__table thead th:nth-child(3) { width: 20%; text-align: left; }
-.shopping__cart__table thead th:nth-child(4) { width: 5%; text-align: center; }
+.basket-items-display-panel thead th:nth-child(1) { width: 52%; text-align: left; } 
+.basket-items-display-panel thead th:nth-child(2) { width: 23%; text-align: left; } 
+.basket-items-display-panel thead th:nth-child(3) { width: 20%; text-align: left; }
+.basket-items-display-panel thead th:nth-child(4) { width: 5%; text-align: center; }
  
-.shopping__cart__table tbody tr {
+#cart-item-list tr {
     border-bottom: 1px solid #f2f2f2;
 }
  
-.shopping__cart__table tbody td {
+#cart-item-list td {
     padding-bottom: 30px;
     padding-top: 30px;
     vertical-align: middle;
 }
  
-.shopping__cart__table tbody td.quantity__item { text-align: left; }
-.shopping__cart__table tbody td.cart__price { text-align: left; }
-.shopping__cart__table tbody td.cart__close { text-align: center; }
+#cart-item-list td.quantity__item { text-align: left; }
+#cart-item-list td.cart__price { text-align: left; }
+#cart-item-list td.cart__close { text-align: center; }
  
 .product__cart__item {
     display: flex;
@@ -165,7 +166,7 @@
     border-color: #111111;
 }
  
-.continue__btn a {
+.btn-fallback-navigation {
     color: #111111;
     font-size: 14px;
     font-weight: 700;
@@ -177,51 +178,65 @@
     text-decoration: none;
     transition: all 0.3s;
 }
- 
-.continue__btn.update__btn {
-    text-align: right;
-}
- 
-.continue__btn.update__btn a {
-    background: #111111;
-    color: #ffffff;
-    border-color: #111111;
-}
- 
 
-.cart__discount {
+.btn-fallback-navigation:hover {
+    background: #f3f2ee;
+    color: #111111;
+}
+ 
+.btn-refresh-state {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #111111;
+    background: #111111;
+    padding: 14px 35px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-refresh-state:hover {
+    background: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+ 
+/* --- SIDEBAR COMPONENTS (PROMO & TOTAL) --- */
+.checkout-incentive-block {
     margin-bottom: 40px;
 }
  
-.cart__discount h6 {
+.incentive-heading {
     color: #111111;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
  
-.cart__discount form {
+.promo-submission-form {
     position: relative;
 }
  
-.cart__discount form input {
+.promo-submission-form input {
     font-size: 14px;
     color: #b7b7b7;
     height: 50px;
     width: 100%;
     border: 1px solid #e1e1e1;
-    padding:1px 2px 1px 20px;
-    
+    padding: 1px 2px 1px 20px;
     outline: none;
     transition: all 0.3s;
 }
  
-.cart__discount form input:focus {
+.promo-submission-form input:focus {
     border-color: #111111;
     color: #111111;
 }
  
-.cart__discount form button {
+.btn-apply-incentive {
     font-size: 14px;
     color: #ffffff;
     font-weight: 700;
@@ -237,64 +252,63 @@
     cursor: pointer;
     transition: all 0.3s;
 }
- 
 
-.cart__total {
+.btn-apply-incentive:hover {
+    background: #333333;
+}
+ 
+/* --- FIX KHỐI CART TOTAL CHUẨN MẪU MỚI --- */
+.financial-summary-block {
     background: #f3f2ee;
     padding: 35px 40px 40px;
 }
  
-.cart__total h6 {
+.summary-heading {
     color: #111111;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #d7d7d7;
-    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
  
-.cart__total ul {
+.summary-list-metrics {
     margin-bottom: 30px;
     padding: 0;
     list-style: none;
 }
  
-.cart__total ul li {
+.summary-list-metrics li {
     font-size: 16px;
     color: #444444;
     overflow: hidden;
-    margin-bottom: 20px;
-    font-weight: 600;
+    margin-bottom: 15px;
+    font-weight: 400; /* Làm thanh nét chữ theo mẫu */
 }
  
-.cart__total ul li span {
-    color: #e53637;
+.summary-list-metrics li span {
+    color: #e53637; /* Màu đỏ cam chuẩn mẫu */
     font-weight: 700;
     float: right;
 }
  
-.cart__total .primary-btn {
+.btn-execute-checkout {
     display: block;
     width: 100%;
     background: #111111;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 12px 10px;
+    padding: 14px 10px;
     text-align: center;
     text-decoration: none;
     transition: all 0.3s;
+    border: none;
+}
+
+.btn-execute-checkout:hover {
+    background: #333333;
+    color: #ffffff;
 }
  
- 
-@media (max-width: 767px) {
-    .continue__btn.update__btn {
-        text-align: left;
-        margin-top: 15px;
-    }
-    .shopping__cart__table {
-        overflow-x: auto;
-    }
-}

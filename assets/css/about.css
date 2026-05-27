@@ -15,14 +15,16 @@
     padding-right: 15px !important;
 }
 
-.about-counter__item {
+/* Đổi từ .about-counter__item */
+.counter-item {
     display: flex;
     align-items: center;
     justify-content: flex-start;  
     column-gap: 15px;
 }
 
-.about-counter__number {
+/* Đổi từ .about-counter__number */
+.counter-num {
     font-size: 60px;
     color: #111111;
     font-weight: 700;
@@ -30,7 +32,8 @@
     margin: 0;
 }
 
-.about-counter__label {
+/* Đổi từ .about-counter__label */
+.counter-txt {
     display: inline-block;        
     height: 50px;                 
     font-family: "Nunito Sans", sans-serif;
@@ -57,12 +60,14 @@
     padding-right: 15px !important;
 }
 
-.about-team__heading {
+/* Đổi từ .about-team__heading */
+.team-hd {
     margin-bottom: 45px;
     text-align: center;
 }
 
-.about-team__label {
+/* Đổi từ .about-team__label */
+.team-sub {
     color: #e53637;
     font-size: 14px;
     font-weight: 700;
@@ -72,83 +77,143 @@
     margin-bottom: 10px;
 }
 
-.about-team__title {
+/* Đổi từ .about-team__title */
+.team-ttl {
     color: #111111;
     font-size: 36px;
     font-weight: 700;
     margin: 0;
 }
 
-.about-team__member {
+/* Đổi từ .about-team__member */
+.team-mbr {
     margin-bottom: 30px;
     text-align: left; 
 }
 
-.about-team__member img {
+.team-mbr img {
     width: 100%;
     display: block;
     margin-bottom: 22px;
 }
 
-.about-team__name {
+/* Đổi từ .about-team__name */
+.team-name {
     color: #111111;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.about-team__role {
+/* Đổi từ .about-team__role */
+.team-role {
     color: #b7b7b7;
     font-size: 15px;
     font-weight: 400;
     margin: 0;
 }
 
+/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 991px) {
-    .about-counter {
-        padding-top: 70px;
+    .checkout-wrap {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-    .about-counter .container {
-        padding-bottom: 40px;
+    
+    .coupon-box {
+        margin-bottom: 35px !important;
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        line-height: 20px;
     }
-    .about-counter .row > [class*="col-"] {
-        margin-bottom: 30px; 
+
+    .bill-title {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
     }
-    .about-team {
-        padding-top: 70px;
-        padding-bottom: 40px;
-    }
-    .about-team__heading {
-        margin-bottom: 35px;
+
+    .order-box {
+        margin-top: 40px !important;
+        padding: 30px 25px;
     }
 }
 
 @media (max-width: 767px) {
-    .about-counter {
-        padding-top: 50px;
+    .checkout-wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-    .about-counter .container {
-        padding-bottom: 20px;
+
+    .page-nav {
+        padding: 30px 0 !important;
     }
-    .about-counter__item {
-        justify-content: center !important; 
+
+    .nav-box .nav-title {
+        font-size: 20px;
     }
-    .about-counter .col-lg-3 .about-counter__label {
+
+    .nav-links {
+        justify-content: flex-start !important;
+    }
+
+    .coupon-box {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    .bill-group {
+        margin-bottom: 18px;
+    }
+
+    .bill-group .bill-control {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .order-box .order-title {
+        font-size: 20px;
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+    }
+
+    .order-row, 
+    .order-list li, 
+    .order-total li {
+        font-size: 14px;
+    }
+
+    .order-total li {
+        line-height: 32px;
+    }
+
+    .order-box .order-btn {
+        padding: 14px 0px;
+        font-size: 13px;
+    }
+
+    .counter-item {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        margin-bottom: 25px;
+    }
+
+    .about-counter .col-lg-3 .counter-txt {
         width: auto !important;
         height: auto !important;
     }
-    .about-team {
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-    .about-team__heading {
+
+    .team-hd {
         margin-bottom: 30px;
+        text-align: left !important;
     }
-    .about-team__title {
+
+    .team-ttl {
         font-size: 28px; 
     }
-    .about-team__member {
-        text-align: center;
+
+    .team-mbr {
+        text-align: left !important;
         margin-bottom: 40px;
     }
 }

@@ -71,13 +71,13 @@
         </nav>
     </header>
 
-    <section class="breadcrumb-option">
+    <main class="page-route-indicator-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb__text">
+                    <div class="route-map-content">
                         <h4>Shopping Cart</h4>
-                        <div class="breadcrumb__links">
+                        <div class="route-map-anchors">
                             <a href="./index.html">Home</a>
                             <a href="./shop.html">Shop</a>
                             <span>Shopping Cart</span>
@@ -86,54 +86,57 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section class="shopping-cart spad">
+    <section class="cart-manager-wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-8">
-                    <div class="shopping__cart__table">
-                        <table>
+                    <div class="basket-items-display-panel">
+                        <table class="w-100">
                             <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                    <th></th>
+                                <tr class="basket-header-row">
+                                    <th class="text-start pb-3">Product</th>
+                                    <th class="text-start pb-3">Quantity</th>
+                                    <th class="text-start pb-3">Total</th>
+                                    <th class="text-center pb-3"></th>
                                 </tr>
                             </thead>
                             <tbody id="cart-item-list"></tbody>
                         </table>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="continue__btn">
-                                <a href="#">Continue Shopping</a>
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <div class="action-trigger-box">
+                                <a href="#" class="btn-fallback-navigation">Continue Shopping</a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="continue__btn update__btn">
-                                <a href="#"><i class="fa-solid fa-rotate-right"></i> Update cart</a>
+                        <div class="col-6 text-end">
+                            <div class="action-trigger-box">
+                                <a href="#" class="btn-refresh-state"><i class="fa-solid fa-rotate-right"></i> Update cart</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="cart__discount">
-                        <h6>Discount codes</h6>
-                        <form action="#">
-                            <input type="text" placeholder="Coupon code">
-                            <button type="submit">Apply</button>
+                    <div class="checkout-incentive-block">
+                        <h6 class="incentive-heading">Discount codes</h6>
+                        <form class="promo-submission-form" action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control shadow-none" placeholder="Coupon code">
+                                <button type="submit" class="btn-apply-incentive">Apply</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="cart__total">
-                        <h6>Cart total</h6>
-                        <ul>
+                    
+                    <div class="financial-summary-block">
+                        <h6 class="summary-heading">Cart total</h6>
+                        <ul class="summary-list-metrics">
                             <li>Subtotal <span>$ 169.50</span></li>
                             <li>Total <span>$ 169.50</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <a href="#" class="btn-execute-checkout text-uppercase">Proceed to checkout</a>
                     </div>
                 </div>
             </div>

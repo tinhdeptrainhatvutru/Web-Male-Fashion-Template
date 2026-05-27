@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Male-Fashion | Contact</title>
+    <title>Male-Fashion | Contact Us</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/vendors/swiper/swiper-bundle.min.css">
@@ -69,7 +69,7 @@
         </nav>
     </header>
 
-    <div class="map">
+    <div class="location-map-holder">
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3825.996653478773!2d107.57287507418857!3d16.47570712842995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI4JzMyLjUiTiAxMDfCsDM0JzMxLjYiRQ!5e0!3m2!1svi!2s!4v1778725433761!5m2!1svi!2s" 
             width="100%" 
@@ -81,42 +81,50 @@
         </iframe>
     </div>
 
-    <section class="contact-section">
+    <section class="contact-hub-wrapper ">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-text">
-                        <div class="section-title">
-                            <span>Information</span>
-                            <h2>Contact Us</h2>
-                            <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict attention.</p>
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <div class="office-directory-panel">
+                        <div class="hub-header-block mb-4">
+                            <span class="badge text-uppercase tracking-wider px-0">Information</span>
+                            <h2 class="display-6 fw-bold mt-2 mb-3">Contact Us</h2>
+                            <p class="text-muted">As you might expect of a company that began as a high-end interiors contractor, we pay strict attention.</p>
                         </div>
-                        <ul>
-                            <li>
-                                <h4>America</h4>
-                                <p>195 E Parker Square Dr, Parker, CO 801 <br />+43 982-314-0958</p>
-                            </li>
-                            <li>
-                                <h4>France</h4>
-                                <p>109 Avenue Léon, 63 Clermont-Ferrand <br />+12 345-423-9893</p>
-                            </li>
-                        </ul>
+                        <div class="branch-listing-grid d-flex flex-column gap-4">
+                            <div class="branch-card-item">
+                                <h4 class="h5 fw-bold mb-2">America</h4>
+                                <p class="text-secondary mb-0">195 E Parker Square Dr, Parker, CO 801 <br />+43 982-314-0958</p>
+                            </div>
+                            <div class="branch-card-item">
+                                <h4 class="h5 fw-bold mb-2">France</h4>
+                                <p class="text-secondary mb-0">109 Avenue Léon, 63 Clermont-Ferrand <br />+12 345-423-9893</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Name">
+                <div class="col-lg-6 col-md-12">
+                    <div class="inquiry-submission-block">
+                        <form class="inquiry-feedback-form" action="#">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-field-group">
+                                        <input type="text" class="form-control shadow-none custom-input" placeholder="Name" required>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Email">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="input-field-group">
+                                        <input type="email" class="form-control shadow-none custom-input" placeholder="Email" required>
+                                    </div>
                                 </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
+                                <div class="col-12">
+                                    <div class="input-field-group">
+                                        <textarea class="form-control shadow-none custom-textarea" rows="5" placeholder="Message" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-submit-inquiry text-uppercase fw-semibold">Send Message</button>
                                 </div>
                             </div>
                         </form>
