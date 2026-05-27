@@ -96,92 +96,99 @@
                 <div class="row">
                     
                     <div class="col-lg-8 col-md-7">
-                        <div class="coupon-box">
-                            <i class="fa-solid fa-tag"></i> 
-                            <span>Have a coupon? <a href="#">Click here</a> to enter your code</span>
+                        
+                        <div class="checkout-coupon-area">
+                            <div class="coupon-box">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Have a coupon? <a href="#">Click here</a> to enter your code</span>
+                            </div>
                         </div>
 
-                        <h6 class="bill-title">Billing Details</h6>
-                        
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="bill-group">
-                                    <label class="bill-label">First Name<span>*</span></label>
-                                    <input type="text" class="bill-control">
+                        <div class="checkout-billing-fields">
+                            <h6 class="bill-title">Billing Details</h6>
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="bill-group">
+                                        <label class="bill-label">First Name<span>*</span></label>
+                                        <input type="text" class="bill-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bill-group">
+                                        <label class="bill-label">Last Name<span>*</span></label>
+                                        <input type="text" class="bill-control">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="bill-group">
-                                    <label class="bill-label">Last Name<span>*</span></label>
-                                    <input type="text" class="bill-control">
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Country<span>*</span></label>
+                                <input type="text" class="bill-control">
+                            </div>
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Address<span>*</span></label>
+                                <input type="text" placeholder="Street Address" class="bill-control mb-3">
+                                <input type="text" placeholder="Apartment, suite, unit etc. (optional)" class="bill-control">
+                            </div>
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Town / City<span>*</span></label>
+                                <input type="text" class="bill-control">
+                            </div>
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Country / State<span>*</span></label>
+                                <input type="text" class="bill-control">
+                            </div>
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Postcode / ZIP<span>*</span></label>
+                                <input type="text" class="bill-control">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="bill-group">
+                                        <label class="bill-label">Phone<span>*</span></label>
+                                        <input type="tel" class="bill-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bill-group">
+                                        <label class="bill-label">Email<span>*</span></label>
+                                        <input type="email" class="bill-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Country<span>*</span></label>
-                            <input type="text" class="bill-control">
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Address<span>*</span></label>
-                            <input type="text" placeholder="Street Address" class="bill-control mb-3">
-                            <input type="text" placeholder="Apartment, suite, unit etc. (optional)" class="bill-control">
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Town / City<span>*</span></label>
-                            <input type="text" class="bill-control">
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Country / State<span>*</span></label>
-                            <input type="text" class="bill-control">
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Postcode / ZIP<span>*</span></label>
-                            <input type="text" class="bill-control">
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-lg-6">
+
+                            <div class="checkout-account-wrapper">
+                                <div class="check-item">
+                                    <label for="acc" class="check-label">
+                                        <input type="checkbox" id="acc" class="check-input">
+                                        Create an account?
+                                    </label>
+                                </div>
+                                <p class="bill-notes">Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
+                                
                                 <div class="bill-group">
-                                    <label class="bill-label">Phone<span>*</span></label>
-                                    <input type="tel" class="bill-control">
+                                    <label class="bill-label">Account Password<span>*</span></label>
+                                    <input type="password" class="bill-control">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="bill-group">
-                                    <label class="bill-label">Email<span>*</span></label>
-                                    <input type="email" class="bill-control">
-                                </div>
+                            
+                            <div class="check-item mb-3">
+                                <label for="diff-acc" class="check-label">
+                                    <input type="checkbox" id="diff-acc" class="check-input">
+                                    Note about your order, e.g., special note for delivery
+                                </label>
                             </div>
-                        </div>
-                        
-                        <div class="check-item">
-                            <label for="acc" class="check-label">
-                                <input type="checkbox" id="acc" class="check-input">
-                                Create an account?
-                            </label>
-                        </div>
-                        <p class="bill-notes">Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Account Password<span>*</span></label>
-                            <input type="password" class="bill-control">
-                        </div>
-                        
-                        <div class="check-item mb-3">
-                            <label for="diff-acc" class="check-label">
-                                <input type="checkbox" id="diff-acc" class="check-input">
-                                Note about your order, e.g., special note for delivery
-                            </label>
-                        </div>
-                        
-                        <div class="bill-group">
-                            <label class="bill-label">Order notes<span>*</span></label>
-                            <input type="text" placeholder="Notes about your order, e.g. special notes for delivery." class="bill-control">
+                            
+                            <div class="bill-group">
+                                <label class="bill-label">Order notes<span>*</span></label>
+                                <input type="text" placeholder="Notes about your order, e.g. special notes for delivery." class="bill-control">
+                            </div>
                         </div>
                     </div>
 
@@ -214,18 +221,20 @@
                             
                             <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             
-                            <div class="check-item">
-                                <label for="payment" class="check-label">
-                                    <input type="checkbox" id="payment" class="check-input">
-                                    Check Payment
-                                </label>
-                            </div>
-                            
-                            <div class="check-item mb-4">
-                                <label for="paypal" class="check-label">
-                                    <input type="checkbox" id="paypal" class="check-input">
-                                    Paypal
-                                </label>
+                            <div class="checkout-payment-methods">
+                                <div class="check-item">
+                                    <label for="payment" class="check-label">
+                                        <input type="checkbox" id="payment" class="check-input">
+                                        Check Payment
+                                    </label>
+                                </div>
+                                
+                                <div class="check-item mb-4">
+                                    <label for="paypal" class="check-label">
+                                        <input type="checkbox" id="paypal" class="check-input">
+                                        Paypal
+                                    </label>
+                                </div>
                             </div>
                             
                             <button type="submit" class="order-btn">Place Order</button>
